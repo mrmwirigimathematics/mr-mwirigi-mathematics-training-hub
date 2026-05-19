@@ -964,4 +964,467 @@
             <ol class="solution-steps">
               <li>\[\mathbf{a}+\mathbf{b}=(12+8)\mathbf{i}+(5-3)\mathbf{j}\]</li>
               <li>\[\mathbf{a}+\mathbf{b}=20\mathbf{i}+2\mathbf{j}\]</li>
-              <li><strong>Answer:</strong> R
+              <li><strong>Answer:</strong> Resultant shift is $20\mathbf{i}+2\mathbf{j}$.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 17: Unit Vector in Direction of a Line</h3>
+            <p>Find the unit vector in the direction $3\mathbf{i}+4\mathbf{j}$.</p>
+            <ol class="solution-steps">
+              <li>Magnitude: \[|\mathbf{a}|=\sqrt{3^2+4^2}=5\]</li>
+              <li>Unit vector: \[\hat{\mathbf{a}}=\frac{3\mathbf{i}+4\mathbf{j}}{5}\]</li>
+              <li>\[\hat{\mathbf{a}}=0.6\mathbf{i}+0.8\mathbf{j}\]</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="dot-cross">
+          <span class="note-tag">2.3 Dot and cross products</span>
+          <h3>Dot Product and Cross Product</h3>
+          <p>
+            Dot product gives a scalar result and is linked to angles and projection. Cross product gives a vector result and is linked to
+            area and perpendicular direction.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Dot Product</h3>
+            <div class="formula-list">
+              <div class="formula-box">\[\mathbf{a}\cdot\mathbf{b}=a_xb_x+a_yb_y+a_zb_z\]</div>
+              <div class="formula-box">\[\mathbf{a}\cdot\mathbf{b}=|\mathbf{a}||\mathbf{b}|\cos\theta\]</div>
+              <div class="formula-box">Angle: \[\cos\theta=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}||\mathbf{b}|}\]</div>
+              <div class="formula-box">Perpendicular condition: \[\mathbf{a}\cdot\mathbf{b}=0\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 18: Angle Between Two Survey Lines</h3>
+            <p>Find the angle between $\mathbf{a}=3\mathbf{i}+4\mathbf{j}$ and $\mathbf{b}=5\mathbf{i}+0\mathbf{j}$.</p>
+            <ol class="solution-steps">
+              <li>Dot product: \[\mathbf{a}\cdot\mathbf{b}=3(5)+4(0)=15\]</li>
+              <li>Magnitudes: \[|\mathbf{a}|=5,\quad |\mathbf{b}|=5\]</li>
+              <li>\[\cos\theta=\frac{15}{5\times5}=0.6\]</li>
+              <li>\[\theta=\cos^{-1}(0.6)=53.13^\circ\]</li>
+              <li><strong>Answer:</strong> The angle between the lines is $53.13^\circ$.</li>
+            </ol>
+          </div>
+
+          <div class="formula-panel">
+            <h3>Cross Product</h3>
+            <div class="formula-box">
+              \[
+              \mathbf{a}\times\mathbf{b}=\begin{vmatrix}
+              \mathbf{i} & \mathbf{j} & \mathbf{k}\\
+              a_x & a_y & a_z\\
+              b_x & b_y & b_z
+              \end{vmatrix}
+              \]
+            </div>
+            <div class="formula-list">
+              <div class="formula-box">Magnitude: \[|\mathbf{a}\times\mathbf{b}|=|\mathbf{a}||\mathbf{b}|\sin\theta\]</div>
+              <div class="formula-box">Area of parallelogram: \[A=|\mathbf{a}\times\mathbf{b}|\]</div>
+              <div class="formula-box">Area of triangle: \[A=\frac{1}{2}|\mathbf{a}\times\mathbf{b}|\]</div>
+              <div class="formula-box">Parallel condition: \[\mathbf{a}\times\mathbf{b}=\mathbf{0}\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 19: Cross Product Area</h3>
+            <p>Two boundary vectors are $\mathbf{a}=4\mathbf{i}$ and $\mathbf{b}=3\mathbf{j}$. Find the area of the triangle they form.</p>
+            <ol class="solution-steps">
+              <li>The vectors are perpendicular, so the parallelogram area is $4\times3=12$.</li>
+              <li>Triangle area: \[A=\frac{1}{2}\times12=6\]</li>
+              <li><strong>Answer:</strong> Triangle area is $6\text{ square units}$.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card page-break" id="grad-div-curl">
+          <span class="note-tag">2.4 Gradient, divergence and curl</span>
+          <h3>Gradient, Divergence and Curl</h3>
+          <p>
+            These vector calculus concepts describe how scalar and vector fields change in space. In advanced surveying and geospatial analysis,
+            they can be connected to terrain surfaces, slope direction, flow fields and spatial variation.
+          </p>
+
+          <div class="definition-panel">
+            <h3>Scalar and vector fields</h3>
+            <p>
+              A scalar field assigns a single value to every point, such as elevation $z=f(x,y)$. A vector field assigns a vector to every point,
+              such as a displacement field, wind field or flow direction field.
+            </p>
+          </div>
+
+          <div class="formula-panel">
+            <h3>Gradient</h3>
+            <div class="formula-box">\[\nabla f=\frac{\partial f}{\partial x}\mathbf{i}+\frac{\partial f}{\partial y}\mathbf{j}+\frac{\partial f}{\partial z}\mathbf{k}\]</div>
+            <p>The gradient points in the direction of steepest increase of a scalar field.</p>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 20: Gradient of a Terrain Surface</h3>
+            <p>A simplified terrain surface is $z=2x+3y+10$. Find the gradient.</p>
+            <ol class="solution-steps">
+              <li>\[\frac{\partial z}{\partial x}=2\]</li>
+              <li>\[\frac{\partial z}{\partial y}=3\]</li>
+              <li>\[\nabla z=2\mathbf{i}+3\mathbf{j}\]</li>
+              <li><strong>Interpretation:</strong> The surface rises fastest in the direction $2\mathbf{i}+3\mathbf{j}$.</li>
+            </ol>
+          </div>
+
+          <div class="formula-panel">
+            <h3>Divergence</h3>
+            <div class="formula-box">\[\nabla\cdot\mathbf{F}=\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}\]</div>
+            <p>For $\mathbf{F}=P\mathbf{i}+Q\mathbf{j}+R\mathbf{k}$, divergence measures net spreading out from a point.</p>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 21: Divergence of a Vector Field</h3>
+            <p>Find the divergence of $\mathbf{F}=x^2\mathbf{i}+3y\mathbf{j}+2z\mathbf{k}$.</p>
+            <ol class="solution-steps">
+              <li>\[\frac{\partial}{\partial x}(x^2)=2x\]</li>
+              <li>\[\frac{\partial}{\partial y}(3y)=3\]</li>
+              <li>\[\frac{\partial}{\partial z}(2z)=2\]</li>
+              <li>\[\nabla\cdot\mathbf{F}=2x+3+2=2x+5\]</li>
+            </ol>
+          </div>
+
+          <div class="formula-panel">
+            <h3>Curl</h3>
+            <div class="formula-box">
+              \[
+              \nabla\times\mathbf{F}=\begin{vmatrix}
+              \mathbf{i} & \mathbf{j} & \mathbf{k}\\
+              \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+              P & Q & R
+              \end{vmatrix}
+              \]
+            </div>
+            <p>Curl measures rotational tendency in a vector field.</p>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 22: Curl of a Simple Field</h3>
+            <p>Find the curl of $\mathbf{F}=-y\mathbf{i}+x\mathbf{j}+0\mathbf{k}$.</p>
+            <ol class="solution-steps">
+              <li>Here $P=-y$, $Q=x$, $R=0$.</li>
+              <li>\[\nabla\times\mathbf{F}=\left(\frac{\partial R}{\partial y}-\frac{\partial Q}{\partial z}\right)\mathbf{i}+\left(\frac{\partial P}{\partial z}-\frac{\partial R}{\partial x}\right)\mathbf{j}+\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\mathbf{k}\]</li>
+              <li>\[=0\mathbf{i}+0\mathbf{j}+(1-(-1))\mathbf{k}\]</li>
+              <li>\[\nabla\times\mathbf{F}=2\mathbf{k}\]</li>
+              <li><strong>Interpretation:</strong> The field has rotational tendency in the positive $\mathbf{k}$ direction.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="note-card page-break" id="matrices">
+          <span class="note-tag">Learning Outcome 3</span>
+          <h2>3. Apply Matrix</h2>
+          <p>
+            Matrices organise numerical information into rows and columns. In land survey, matrices are used in coordinate transformations,
+            least-squares adjustment, simultaneous correction equations and computational survey models.
+          </p>
+
+          <div class="definition-panel">
+            <h3>Matrix notation</h3>
+            <p>
+              A matrix $A$ with $m$ rows and $n$ columns is called an $m\times n$ matrix. A system of simultaneous equations can be written compactly as:
+            </p>
+            <div class="formula-box">\[AX=B\]</div>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="matrix-2x2">
+          <span class="note-tag">3.1 Determinant and inverse of 2×2 matrix</span>
+          <h3>Determinant and Inverse of a 2×2 Matrix</h3>
+          <p>
+            A determinant is a scalar value associated with a square matrix. It tells whether the matrix has an inverse.
+          </p>
+
+          <div class="formula-panel">
+            <h3>2×2 Determinant and Inverse</h3>
+            <div class="formula-box">
+              \[
+              A=\begin{bmatrix}a&b\\c&d\end{bmatrix}
+              \]
+            </div>
+            <div class="formula-list">
+              <div class="formula-box">\[|A|=ad-bc\]</div>
+              <div class="formula-box">\[A^{-1}=\frac{1}{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}\]</div>
+            </div>
+          </div>
+
+          <div class="warning-panel">
+            <h3>Condition for inverse</h3>
+            <p>
+              A matrix has an inverse only if its determinant is not zero. If $|A|=0$, the matrix is singular and cannot be inverted.
+            </p>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 23: Determinant of a 2×2 Matrix</h3>
+            <p>Find the determinant of $A=\begin{bmatrix}3&2\\5&4\end{bmatrix}$.</p>
+            <ol class="solution-steps">
+              <li>\[|A|=ad-bc\]</li>
+              <li>\[|A|=(3)(4)-(2)(5)=12-10=2\]</li>
+              <li><strong>Answer:</strong> $|A|=2$.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 24: Inverse of a 2×2 Matrix</h3>
+            <p>Find the inverse of $A=\begin{bmatrix}3&2\\5&4\end{bmatrix}$.</p>
+            <ol class="solution-steps">
+              <li>From the previous example, $|A|=2$.</li>
+              <li>\[A^{-1}=\frac{1}{2}\begin{bmatrix}4&-2\\-5&3\end{bmatrix}\]</li>
+              <li>\[A^{-1}=\begin{bmatrix}2&-1\\-2.5&1.5\end{bmatrix}\]</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="matrix-3x3">
+          <span class="note-tag">3.2 Determinant and inverse of 3×3 matrix</span>
+          <h3>Determinant and Inverse of a 3×3 Matrix</h3>
+          <p>
+            A $3\times3$ matrix is common in three-variable systems, 3D coordinate transformations and advanced adjustment computations.
+          </p>
+
+          <div class="formula-panel">
+            <h3>3×3 Determinant</h3>
+            <div class="formula-box">
+              \[
+              A=\begin{bmatrix}
+              a&b&c\\
+              d&e&f\\
+              g&h&i
+              \end{bmatrix}
+              \]
+            </div>
+            <div class="formula-box">\[|A|=a(ei-fh)-b(di-fg)+c(dh-eg)\]</div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 25: Determinant of a 3×3 Matrix</h3>
+            <p>Find the determinant of $A=\begin{bmatrix}1&2&3\\0&1&4\\5&6&0\end{bmatrix}$.</p>
+            <ol class="solution-steps">
+              <li>\[|A|=1\begin{vmatrix}1&4\\6&0\end{vmatrix}-2\begin{vmatrix}0&4\\5&0\end{vmatrix}+3\begin{vmatrix}0&1\\5&6\end{vmatrix}\]</li>
+              <li>\[=1(1\cdot0-4\cdot6)-2(0\cdot0-4\cdot5)+3(0\cdot6-1\cdot5)\]</li>
+              <li>\[=-24-2(-20)+3(-5)\]</li>
+              <li>\[=-24+40-15=1\]</li>
+              <li><strong>Answer:</strong> $|A|=1$.</li>
+            </ol>
+          </div>
+
+          <div class="formula-panel">
+            <h3>Inverse of a 3×3 Matrix</h3>
+            <div class="formula-box">\[A^{-1}=\frac{1}{|A|}\operatorname{adj}(A)\]</div>
+            <p>
+              The inverse is found by calculating cofactors, forming the cofactor matrix, transposing it to get the adjugate,
+              and dividing by the determinant.
+            </p>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 26: Using the 3×3 Inverse Formula Conceptually</h3>
+            <p>If a $3\times3$ matrix has determinant $|A|=1$ and adjugate matrix
+              $\operatorname{adj}(A)=\begin{bmatrix}-24&18&5\\20&-15&-4\\-5&4&1\end{bmatrix}$,
+              find $A^{-1}$.
+            </p>
+            <ol class="solution-steps">
+              <li>\[A^{-1}=\frac{1}{|A|}\operatorname{adj}(A)\]</li>
+              <li>Since $|A|=1$: \[A^{-1}=\operatorname{adj}(A)\]</li>
+              <li>\[A^{-1}=\begin{bmatrix}-24&18&5\\20&-15&-4\\-5&4&1\end{bmatrix}\]</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card page-break" id="simultaneous">
+          <span class="note-tag">3.3 Solutions of simultaneous equations</span>
+          <h3>Solutions of Simultaneous Equations</h3>
+          <p>
+            Simultaneous equations occur when several unknowns are related by several equations. In surveying, unknown corrections,
+            coordinate adjustments or transformation parameters may be solved using matrix methods.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Matrix Method</h3>
+            <div class="formula-list">
+              <div class="formula-box">System form: \[AX=B\]</div>
+              <div class="formula-box">Solution: \[X=A^{-1}B\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 27: Solving Two Simultaneous Equations by Matrix Inverse</h3>
+            <p>Solve the system:</p>
+            <div class="formula-box">
+              \[
+              \begin{aligned}
+              3x+2y&=16\\
+              5x+4y&=28
+              \end{aligned}
+              \]
+            </div>
+            <ol class="solution-steps">
+              <li>Write in matrix form: \[\begin{bmatrix}3&2\\5&4\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}16\\28\end{bmatrix}\]</li>
+              <li>Use inverse from earlier: \[A^{-1}=\begin{bmatrix}2&-1\\-2.5&1.5\end{bmatrix}\]</li>
+              <li>\[X=A^{-1}B=\begin{bmatrix}2&-1\\-2.5&1.5\end{bmatrix}\begin{bmatrix}16\\28\end{bmatrix}\]</li>
+              <li>\[x=2(16)-1(28)=32-28=4\]</li>
+              <li>\[y=-2.5(16)+1.5(28)=-40+42=2\]</li>
+              <li><strong>Answer:</strong> $x=4$, $y=2$.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 28: Three Unknown Survey Corrections</h3>
+            <p>Solve the system:</p>
+            <div class="formula-box">
+              \[
+              \begin{aligned}
+              x+2y+3z&=14\\
+              y+4z&=14\\
+              5x+6y&=23
+              \end{aligned}
+              \]
+            </div>
+            <ol class="solution-steps">
+              <li>From the second equation: \[y=14-4z\]</li>
+              <li>Substitute into the third equation: \[5x+6(14-4z)=23\]</li>
+              <li>\[5x+84-24z=23\Rightarrow5x=24z-61\]</li>
+              <li>Substitute $y=14-4z$ into the first equation: \[x+2(14-4z)+3z=14\]</li>
+              <li>\[x+28-8z+3z=14\Rightarrow x=5z-14\]</li>
+              <li>Equate expressions for $x$: \[5z-14=\frac{24z-61}{5}\]</li>
+              <li>\[25z-70=24z-61\Rightarrow z=9\]</li>
+              <li>\[y=14-4(9)=-22\]</li>
+              <li>\[x=5(9)-14=31\]</li>
+              <li><strong>Answer:</strong> $x=31$, $y=-22$, $z=9$.</li>
+            </ol>
+          </div>
+
+          <div class="warning-panel">
+            <h3>Survey modelling caution</h3>
+            <p>
+              Matrix solutions are only as reliable as the equations supplied. Wrong observations, wrong signs or poor weighting can produce
+              mathematically correct but practically wrong answers.
+            </p>
+          </div>
+        </section>
+
+        <section class="task-panel" id="practice">
+          <h2>Practice Questions</h2>
+
+          <h3>Section A: Statistics and Probability</h3>
+          <ol class="solution-steps">
+            <li>Find the mean of distance observations $80.12\text{ m}$, $80.15\text{ m}$, $80.11\text{ m}$ and $80.14\text{ m}$.</li>
+            <li>Find the median of $12.4$, $12.1$, $12.6$, $12.3$, $12.5$.</li>
+            <li>Find the mode of $1.245$, $1.246$, $1.245$, $1.247$, $1.245$.</li>
+            <li>Calculate the sample standard deviation of $20.1$, $20.3$, $20.2$, $20.4$.</li>
+            <li>A surveyor finds that 4 out of 25 observations are outside tolerance. Find the probability of an outside-tolerance observation.</li>
+            <li>For $X\sim B(6,0.2)$, find $P(X=2)$.</li>
+            <li>If blunders occur at an average rate of 1.5 per survey job, use the Poisson distribution to find $P(X=0)$.</li>
+            <li>If $X\sim N(50,4^2)$, find the z-score when $x=58$.</li>
+          </ol>
+
+          <h3>Section B: Vector Theory</h3>
+          <ol class="solution-steps" start="9">
+            <li>State two examples of scalar quantities and two examples of vector quantities in land survey.</li>
+            <li>Find the magnitude of $\mathbf{a}=7\mathbf{i}+24\mathbf{j}$.</li>
+            <li>Find $\mathbf{a}+\mathbf{b}$ where $\mathbf{a}=3\mathbf{i}+5\mathbf{j}$ and $\mathbf{b}=4\mathbf{i}-2\mathbf{j}$.</li>
+            <li>Find the unit vector in the direction $8\mathbf{i}+6\mathbf{j}$.</li>
+            <li>Find the dot product of $\mathbf{a}=2\mathbf{i}+3\mathbf{j}$ and $\mathbf{b}=4\mathbf{i}+5\mathbf{j}$.</li>
+            <li>Find the angle between $\mathbf{a}=\mathbf{i}+\mathbf{j}$ and $\mathbf{b}=\mathbf{i}$.</li>
+            <li>Find the gradient of $z=4x-2y+7$.</li>
+            <li>Find the divergence of $\mathbf{F}=2x\mathbf{i}+y^2\mathbf{j}+3z\mathbf{k}$.</li>
+          </ol>
+
+          <h3>Section C: Matrices</h3>
+          <ol class="solution-steps" start="17">
+            <li>Find the determinant of $\begin{bmatrix}4&3\\2&5\end{bmatrix}$.</li>
+            <li>Find the inverse of $\begin{bmatrix}4&3\\2&5\end{bmatrix}$.</li>
+            <li>Find the determinant of $\begin{bmatrix}2&1&0\\3&4&1\\1&0&2\end{bmatrix}$.</li>
+            <li>Solve $2x+y=9$ and $x+3y=13$ using matrix method.</li>
+            <li>Write the following system in the form $AX=B$: $x+2y-z=4$, $3x-y+2z=7$, $2x+y+z=6$.</li>
+          </ol>
+        </section>
+
+        <section class="note-card" id="summary">
+          <span class="note-tag">Competency checklist</span>
+          <h2>Summary Checklist</h2>
+          <div class="three-col">
+            <div class="mini-card">
+              <h3>Statistics and probability</h3>
+              <ul>
+                <li>Calculate mean, median and mode.</li>
+                <li>Calculate sample standard deviation.</li>
+                <li>Distinguish grouped and ungrouped data.</li>
+                <li>Apply binomial, Poisson and normal distributions.</li>
+                <li>Interpret probability in survey tolerance decisions.</li>
+              </ul>
+            </div>
+            <div class="mini-card">
+              <h3>Vector theory</h3>
+              <ul>
+                <li>Distinguish scalar and vector quantities.</li>
+                <li>Perform vector addition and subtraction.</li>
+                <li>Find magnitudes and unit vectors.</li>
+                <li>Use dot product to find angles.</li>
+                <li>Use cross product to interpret area and direction.</li>
+                <li>Understand gradient, divergence and curl.</li>
+              </ul>
+            </div>
+            <div class="mini-card">
+              <h3>Matrices</h3>
+              <ul>
+                <li>Find determinants of 2×2 and 3×3 matrices.</li>
+                <li>Find inverse of a 2×2 matrix.</li>
+                <li>Understand inverse of a 3×3 matrix.</li>
+                <li>Write simultaneous equations in matrix form.</li>
+                <li>Solve simultaneous equations using $X=A^{-1}B$.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="warning-panel">
+            <h3>Common mistakes to avoid</h3>
+            <ul>
+              <li>Using population standard deviation when a sample standard deviation is required.</li>
+              <li>Forgetting to arrange data before finding the median.</li>
+              <li>Confusing binomial and Poisson distributions.</li>
+              <li>Using radians or degrees incorrectly when interpreting vector angles.</li>
+              <li>Confusing dot product with cross product.</li>
+              <li>Trying to invert a matrix with determinant zero.</li>
+              <li>Writing $AX=B$ with coefficients in the wrong order.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Mr Mwirigi Mathematics Training Hub</h3>
+        <p>Professional engineering mathematics notes for Civil Engineering, Building Technology and Land Survey trainees.</p>
+      </div>
+      <div>
+        <h4>Quick Access</h4>
+        <a href="../assignments.html">Assignments</a>
+        <a href="../revision.html">Revision</a>
+        <a href="../references.html">References</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Learning Areas</h4>
+        <a href="../civil.html">Civil Engineering</a>
+        <a href="../building.html">Building Technology</a>
+        <a href="../land-survey.html">Land Survey</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 Mr Mwirigi Mathematics Training Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
