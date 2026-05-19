@@ -17,109 +17,1018 @@
 <h1>Basic Mathematics II for Building Technology</h1>
 <p>Geometry, mensuration, graphs and statistics for building measurement and construction work.</p>
 </div></section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trigonometry, Geometry and Linear Graphs for Building Students | Mr Mwirigi Mathematics Training Hub</title>
+  <link rel="stylesheet" href="./css/style.css" />
 
-<section class="container section lesson-layout">
-<aside class="toc-card">
-  <h3>Lesson menu</h3>
-  <a href="#s1">1. Plane geometry</a><a href="#s2">2. Volume calculations</a><a href="#s3">3. Surface area</a><a href="#s4">4. Graphs</a><a href="#s5">5. Grouped and ungrouped data</a>
-  <hr>
-  <button class="btn secondary" onclick="printPage()">Print / Save as PDF</button>
-</aside>
-<div>
-  <section class="lesson-card">
-    <span class="note-tag">Professional learner notes</span>
-    <h2>Purpose of the topic</h2>
-    <p>Basic Mathematics II expands measurement work into areas, volumes, graphs and interpretation of building data.</p>
-    <p>These notes are written as class notes for engineering trainees. They follow the same working standard used in class: state the formula, substitute correctly, compute, attach units, and then explain what the answer means in a civil, building or survey situation.</p>
-  </section>
-  
-<section class="lesson-card" id="s1">
-  <span class="note-tag">Section 1</span>
-  <h2>Plane geometry</h2>
-  <p>Building drawings use rectangles, triangles, circles and trapezia.</p>
-  <h3>Key formulae</h3>
-  <div class="formula-box">\[A=lw\]</div>
-<div class="formula-box">\[A=\frac12 bh\]</div>
-<div class="formula-box">\[A=\pi r^2\]</div>
-  <div class="example-box">
-    <h3>Worked example</h3>
-    <p>A triangular gable with base 6 m and height 2 m has area 6 m².</p>
-    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
-  </div>
-  <h3>Engineering interpretation</h3>
-  <p>Used in wall and roof-face area calculations.</p>
-</section>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
-<section class="lesson-card" id="s2">
-  <span class="note-tag">Section 2</span>
-  <h2>Volume calculations</h2>
-  <p>Concrete, mortar, excavation and storage require volume calculations.</p>
-  <h3>Key formulae</h3>
-  <div class="formula-box">\[V=lwh\]</div>
-<div class="formula-box">\[V=\pi r^2h\]</div>
-  <div class="example-box">
-    <h3>Worked example</h3>
-    <p>Slab 8 m by 5 m by 0.15 m has volume 6 m³.</p>
-    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
-  </div>
-  <h3>Engineering interpretation</h3>
-  <p>Used for ordering concrete.</p>
-</section>
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #dbe3ef;
+      --soft: #f8fafc;
+      --panel: #ffffff;
+      --brand: #123c69;
+      --brand-2: #0f766e;
+      --accent: #f59e0b;
+      --danger: #b91c1c;
+      --shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+    }
 
-<section class="lesson-card" id="s3">
-  <span class="note-tag">Section 3</span>
-  <h2>Surface area</h2>
-  <p>Surface area supports plastering, painting and cladding estimates.</p>
-  <h3>Key formulae</h3>
-  <div class="formula-box">\[\mathrm{Wall\ area}=lh\]</div>
-  <div class="example-box">
-    <h3>Worked example</h3>
-    <p>A wall 12 m long and 3 m high has area 36 m² before openings.</p>
-    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
-  </div>
-  <h3>Engineering interpretation</h3>
-  <p>Used in finish quantities.</p>
-</section>
+    body {
+      color: var(--ink);
+      background: #f3f6fb;
+      line-height: 1.7;
+    }
 
-<section class="lesson-card" id="s4">
-  <span class="note-tag">Section 4</span>
-  <h2>Graphs</h2>
-  <p>Graphs show cost, production and time relationships.</p>
-  <h3>Key formulae</h3>
-  <div class="formula-box">\[y=mx+c\]</div>
-  <div class="example-box">
-    <h3>Worked example</h3>
-    <p>C=500x+2000 has fixed cost 2000 and rate 500 per unit.</p>
-    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
-  </div>
-  <h3>Engineering interpretation</h3>
-  <p>Useful in estimating and productivity.</p>
-</section>
+    .notes-hero {
+      background:
+        linear-gradient(135deg, rgba(18, 60, 105, 0.96), rgba(15, 118, 110, 0.88)),
+        radial-gradient(circle at top right, rgba(245, 158, 11, 0.35), transparent 42%);
+      color: #fff;
+      padding: 72px 0 56px;
+    }
 
-<section class="lesson-card" id="s5">
-  <span class="note-tag">Section 5</span>
-  <h2>Grouped and ungrouped data</h2>
-  <p>Site data can be organised in frequency tables and charts.</p>
-  <h3>Key formulae</h3>
-  <div class="formula-box">\[\bar{x}=\frac{\sum x}{n}\]</div>
-  <div class="example-box">
-    <h3>Worked example</h3>
-    <p>Mean can summarise daily block production.</p>
-    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
-  </div>
-  <h3>Engineering interpretation</h3>
-  <p>Supports site supervision.</p>
-</section>
+    .notes-hero .eyebrow {
+      color: #fde68a;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
 
-  <section class="exercise-box">
-    <h2>Practice exercises</h2>
-    <ol class="steps"><li>Find wall area after subtracting a 2 m² window.</li><li>Find cylinder volume for r=0.4 m and h=1.5 m.</li><li>Interpret C=750x+3000.</li><li>Draw a table for block outputs over 5 days.</li><li>Calculate mean of 12,14,13,15,16.</li></ol>
-  </section>
-  <section class="summary-box">
-    <h2>Summary</h2>
-    <p>By the end of this topic, a competent trainee should be able to identify the correct formula, perform the calculation accurately, use correct units, and explain the result in a real engineering context.</p>
-  </section>
-</div>
+    .notes-hero h1 {
+      max-width: 1050px;
+      font-size: clamp(2rem, 4vw, 4rem);
+      line-height: 1.05;
+      margin: 0 0 18px;
+    }
+
+    .notes-hero p {
+      max-width: 900px;
+      font-size: 1.08rem;
+      color: #e2e8f0;
+    }
+
+    .lesson-shell {
+      display: grid;
+      grid-template-columns: 310px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .toc-card {
+      position: sticky;
+      top: 90px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+
+    .toc-card h3 {
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+
+    .toc-card a {
+      display: block;
+      padding: 10px 12px;
+      margin: 6px 0;
+      border-radius: 12px;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .toc-card a:hover {
+      background: #eef6ff;
+      border-color: #bfdbfe;
+    }
+
+    .note-card,
+    .formula-panel,
+    .worked-example,
+    .task-panel,
+    .warning-panel,
+    .diagram-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 26px;
+      margin-bottom: 24px;
+    }
+
+    .note-card h2,
+    .note-card h3 {
+      line-height: 1.25;
+    }
+
+    .note-card h2 {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+
+    .note-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+    }
+
+    .outcome-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .outcome-item {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .outcome-item strong {
+      color: var(--brand);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .formula-panel {
+      background: #f8fbff;
+      border-left: 6px solid var(--brand);
+    }
+
+    .formula-panel h3 {
+      margin-top: 0;
+      color: var(--brand);
+    }
+
+    .formula-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .formula-box {
+      background: #ffffff;
+      border: 1px solid #dbeafe;
+      border-radius: 14px;
+      padding: 14px;
+      overflow-x: auto;
+    }
+
+    .worked-example {
+      border-left: 6px solid var(--brand-2);
+    }
+
+    .worked-example h3 {
+      margin-top: 0;
+      color: var(--brand-2);
+    }
+
+    .solution-steps {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .solution-steps li {
+      margin-bottom: 8px;
+    }
+
+    .warning-panel {
+      background: #fff7ed;
+      border-left: 6px solid var(--accent);
+    }
+
+    .warning-panel h3 {
+      margin-top: 0;
+      color: #92400e;
+    }
+
+    .diagram-panel {
+      background: #f8fafc;
+    }
+
+    .diagram-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+
+    .svg-box {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px;
+      overflow-x: auto;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+    }
+
+    table.notes-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      min-width: 700px;
+    }
+
+    .notes-table th,
+    .notes-table td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .notes-table th {
+      background: #eaf2ff;
+      color: #123c69;
+      font-weight: 800;
+    }
+
+    .notes-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .mini-card {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .task-panel {
+      background: #f8fafc;
+      border-left: 6px solid #334155;
+    }
+
+    .task-panel h2,
+    .task-panel h3 {
+      margin-top: 0;
+    }
+
+    .site-note {
+      background: #ecfeff;
+      border: 1px solid #a5f3fc;
+      border-radius: 14px;
+      padding: 14px 16px;
+      color: #164e63;
+      font-weight: 600;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .print-btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 18px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .print-btn.secondary {
+      background: #e2e8f0;
+      color: var(--ink);
+    }
+
+    @media (max-width: 1000px) {
+      .lesson-shell,
+      .outcome-grid,
+      .formula-list,
+      .two-col,
+      .diagram-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .toc-card {
+        position: static;
+      }
+    }
+
+    @media print {
+      .site-header,
+      .site-footer,
+      .toc-card,
+      .btn-row {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .note-card,
+      .formula-panel,
+      .worked-example,
+      .task-panel,
+      .warning-panel,
+      .diagram-panel {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="./index.html"><span class="brand-mark">∑</span><span>Mr Mwirigi Mathematics Training Hub</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="./civil.html">Civil</a>
+        <a href="./building.html">Building</a>
+        <a href="./land-survey.html">Land Survey</a>
+        <a href="./assignments.html">Assignments</a>
+        <a href="./revision.html">Revision</a>
+        <a href="./references.html">References</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="notes-hero">
+      <div class="container">
+        <p class="eyebrow">Building Technology · Engineering Mathematics</p>
+        <h1>Professional Notes on Trigonometry, Geometry and Linear Graphs</h1>
+        <p>
+          These notes help building students solve right-angle triangle problems, calculate areas of common figures,
+          apply Pythagoras' theorem, plot linear graphs and interpret distance-time, temperature-time and velocity-time graphs.
+        </p>
+        <div class="btn-row">
+          <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+          <button class="print-btn secondary" onclick="location.href='#practice'">Go to Practice Questions</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section lesson-shell">
+      <aside class="toc-card">
+        <h3>Lesson Menu</h3>
+        <a href="#overview">Topic overview</a>
+        <a href="#trigonometry">1. Trigonometry calculations</a>
+        <a href="#geometry">2. Geometric calculations</a>
+        <a href="#linear-graphs">3. Linear graphs</a>
+        <a href="#graph-applications">Graph applications</a>
+        <a href="#practice">Practice questions</a>
+        <a href="#summary">Summary checklist</a>
+      </aside>
+
+      <div>
+        <section class="note-card" id="overview">
+          <span class="note-tag">Learner notes</span>
+          <h2>Topic Overview</h2>
+          <p>
+            Building work involves slopes, roof pitch, ramps, staircases, diagonals, setting out, levels and graphical interpretation
+            of site data. Trigonometry, geometry and linear graphs provide the mathematical tools for handling these tasks accurately.
+          </p>
+
+          <div class="outcome-grid">
+            <div class="outcome-item">
+              <strong>Learning Outcome 1: Perform trigonometry calculations</strong>
+              Trigonometric ratios, right-angle triangle calculations, angles of elevation and depression, slope and roof pitch.
+            </div>
+            <div class="outcome-item">
+              <strong>Learning Outcome 2: Perform geometric calculations</strong>
+              Geometrical figures, areas of figures and application of Pythagoras' theorem in building layouts.
+            </div>
+            <div class="outcome-item">
+              <strong>Learning Outcome 3: Apply linear graphs</strong>
+              Data sets, graph scales, axes labelling, plotting straight-line graphs and analysing real site graphs.
+            </div>
+          </div>
+
+          <p class="site-note">
+            Professional working rule: draw a clear sketch, label known values, identify the unknown, choose the correct formula,
+            substitute carefully, then state the answer with correct units.
+          </p>
+        </section>
+
+        <section class="note-card" id="trigonometry">
+          <span class="note-tag">Learning Outcome 1</span>
+          <h2>1. Perform Trigonometry Calculations</h2>
+          <p>
+            Trigonometry deals with relationships between angles and sides of triangles. In building, it is used in roof slopes,
+            stairs, ramps, bracing, setting out and height estimation.
+          </p>
+
+          <h3>1.1 Trigonometric Ratios</h3>
+          <p>
+            In a right-angled triangle, the three main sides are the hypotenuse, opposite side and adjacent side.
+          </p>
+
+          <div class="diagram-panel">
+            <h3>Right-Angled Triangle Labelling</h3>
+            <div class="diagram-grid">
+              <div class="svg-box">
+                <svg width="100%" height="260" viewBox="0 0 420 260" role="img" aria-label="Right angled triangle showing opposite adjacent and hypotenuse sides">
+                  <rect x="0" y="0" width="420" height="260" fill="#ffffff" />
+                  <polygon points="70,210 350,210 350,55" fill="#e0f2fe" stroke="#123c69" stroke-width="4" />
+                  <polyline points="330,210 330,190 350,190" fill="none" stroke="#0f172a" stroke-width="3" />
+                  <path d="M 105 210 A 35 35 0 0 1 121 181" fill="none" stroke="#f59e0b" stroke-width="4" />
+                  <text x="118" y="200" font-size="20" fill="#92400e">θ</text>
+                  <text x="180" y="235" font-size="18" fill="#0f172a">Adjacent</text>
+                  <text x="360" y="140" font-size="18" fill="#0f172a">Opposite</text>
+                  <text x="175" y="120" font-size="18" fill="#0f172a" transform="rotate(-28 175 120)">Hypotenuse</text>
+                </svg>
+              </div>
+              <div>
+                <p>
+                  The side opposite the right angle is always the hypotenuse. The side opposite the angle $\theta$ is the opposite side.
+                  The side next to $\theta$, but not the hypotenuse, is the adjacent side.
+                </p>
+                <p>
+                  Remember the ratios using <strong>SOH-CAH-TOA</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="formula-panel">
+            <h3>Main Trigonometric Ratios</h3>
+            <div class="formula-list">
+              <div class="formula-box">\[\sin\theta=\frac{\text{opposite}}{\text{hypotenuse}}\]</div>
+              <div class="formula-box">\[\cos\theta=\frac{\text{adjacent}}{\text{hypotenuse}}\]</div>
+              <div class="formula-box">\[\tan\theta=\frac{\text{opposite}}{\text{adjacent}}\]</div>
+              <div class="formula-box">\[\theta=\tan^{-1}\left(\frac{\text{opposite}}{\text{adjacent}}\right)\]</div>
+            </div>
+          </div>
+
+          <h3>1.2 Choosing the Correct Ratio</h3>
+          <div class="table-wrap">
+            <table class="notes-table">
+              <thead>
+                <tr>
+                  <th>Known / Required Sides</th>
+                  <th>Ratio to Use</th>
+                  <th>Building Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Opposite and hypotenuse</td>
+                  <td>$\sin\theta$</td>
+                  <td>Finding height reached by an inclined ladder</td>
+                </tr>
+                <tr>
+                  <td>Adjacent and hypotenuse</td>
+                  <td>$\cos\theta$</td>
+                  <td>Finding horizontal projection of a roof member</td>
+                </tr>
+                <tr>
+                  <td>Opposite and adjacent</td>
+                  <td>$\tan\theta$</td>
+                  <td>Finding roof pitch, ramp angle or gradient</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 1: Finding the Height of a Ladder</h3>
+            <p>A ladder of length $6\text{ m}$ leans against a wall at an angle of $65^\circ$ to the ground. Find the vertical height reached.</p>
+            <ol class="solution-steps">
+              <li>The ladder is the hypotenuse. The required height is the opposite side.</li>
+              <li>Use sine: \[\sin\theta=\frac{\text{opposite}}{\text{hypotenuse}}\]</li>
+              <li>Substitute: \[\sin65^\circ=\frac{h}{6}\]</li>
+              <li>Make $h$ the subject: \[h=6\sin65^\circ\]</li>
+              <li>Calculate: \[h=6(0.9063)=5.44\text{ m}\]</li>
+              <li><strong>Answer:</strong> The ladder reaches approximately $5.44\text{ m}$ vertically.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 2: Finding Roof Pitch Angle</h3>
+            <p>A roof rises $1.8\text{ m}$ over a horizontal span of $4.5\text{ m}$. Find the pitch angle.</p>
+            <ol class="solution-steps">
+              <li>The rise is the opposite side and the horizontal span is the adjacent side.</li>
+              <li>Use tangent: \[\tan\theta=\frac{\text{opposite}}{\text{adjacent}}\]</li>
+              <li>Substitute: \[\tan\theta=\frac{1.8}{4.5}=0.4\]</li>
+              <li>Find the angle: \[\theta=\tan^{-1}(0.4)=21.8^\circ\]</li>
+              <li><strong>Answer:</strong> The roof pitch angle is approximately $21.8^\circ$.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 3: Finding Ramp Length</h3>
+            <p>A ramp rises $0.75\text{ m}$ at an angle of $10^\circ$ to the horizontal. Find the ramp length.</p>
+            <ol class="solution-steps">
+              <li>The rise is the opposite side. The ramp length is the hypotenuse.</li>
+              <li>Use sine: \[\sin10^\circ=\frac{0.75}{L}\]</li>
+              <li>Make $L$ the subject: \[L=\frac{0.75}{\sin10^\circ}\]</li>
+              <li>Calculate: \[L=\frac{0.75}{0.1736}=4.32\text{ m}\]</li>
+              <li><strong>Answer:</strong> The ramp length should be approximately $4.32\text{ m}$.</li>
+            </ol>
+          </div>
+
+          <div class="warning-panel">
+            <h3>Calculator caution</h3>
+            <p>
+              Ensure the calculator is in degree mode when working with angles measured in degrees. If the calculator is in radian mode,
+              trigonometric answers will be wrong.
+            </p>
+          </div>
+        </section>
+
+        <section class="note-card" id="geometry">
+          <span class="note-tag">Learning Outcome 2</span>
+          <h2>2. Perform Geometric Calculations</h2>
+          <p>
+            Geometry is the study of shapes, sizes and positions. Building students apply geometry when calculating areas,
+            setting out rectangular corners, checking diagonals and interpreting drawings.
+          </p>
+
+          <h3>2.1 Geometrical Figures</h3>
+          <div class="table-wrap">
+            <table class="notes-table">
+              <thead>
+                <tr>
+                  <th>Figure</th>
+                  <th>Key Properties</th>
+                  <th>Building Application</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Triangle</td>
+                  <td>Three sides and three angles</td>
+                  <td>Roof trusses, bracing, gable ends</td>
+                </tr>
+                <tr>
+                  <td>Rectangle</td>
+                  <td>Opposite sides equal, four right angles</td>
+                  <td>Rooms, slabs, walls, windows and doors</td>
+                </tr>
+                <tr>
+                  <td>Square</td>
+                  <td>Four equal sides and four right angles</td>
+                  <td>Tiles, columns, paving units</td>
+                </tr>
+                <tr>
+                  <td>Circle</td>
+                  <td>All points are equally distant from the centre</td>
+                  <td>Manholes, circular columns, tanks and pipes</td>
+                </tr>
+                <tr>
+                  <td>Trapezium</td>
+                  <td>One pair of parallel sides</td>
+                  <td>Irregular wall panels, drainage sections, embankments</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>2.2 Areas of Figures</h3>
+          <p>
+            Area measures surface coverage. Building applications include floor finishes, roof sheets, wall plastering,
+            painting, formwork and landscaping.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Area Formulae</h3>
+            <div class="formula-list">
+              <div class="formula-box">Rectangle: \[A=lw\]</div>
+              <div class="formula-box">Square: \[A=s^2\]</div>
+              <div class="formula-box">Triangle: \[A=\frac{1}{2}bh\]</div>
+              <div class="formula-box">Parallelogram: \[A=bh\]</div>
+              <div class="formula-box">Trapezium: \[A=\frac{1}{2}(a+b)h\]</div>
+              <div class="formula-box">Circle: \[A=\pi r^2\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 4: Area of a Gable End</h3>
+            <p>A triangular gable end has base $8\text{ m}$ and height $2.4\text{ m}$. Find its area.</p>
+            <ol class="solution-steps">
+              <li>Use triangle area: \[A=\frac{1}{2}bh\]</li>
+              <li>Substitute: \[A=\frac{1}{2}\times8\times2.4\]</li>
+              <li>Calculate: \[A=9.6\text{ m}^2\]</li>
+              <li><strong>Answer:</strong> The gable end area is $9.6\text{ m}^2$.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 5: Area of a Circular Manhole Cover</h3>
+            <p>A circular manhole cover has radius $0.35\text{ m}$. Find its area.</p>
+            <ol class="solution-steps">
+              <li>Use circle area: \[A=\pi r^2\]</li>
+              <li>Substitute: \[A=\pi(0.35)^2\]</li>
+              <li>Calculate: \[A=0.3848\text{ m}^2\]</li>
+              <li><strong>Answer:</strong> The area is approximately $0.385\text{ m}^2$.</li>
+            </ol>
+          </div>
+
+          <h3>2.3 Apply Pythagoras' Theorem</h3>
+          <p>
+            Pythagoras' theorem applies only to right-angled triangles. It is used to find missing sides and check whether
+            corners are square during setting out.
+          </p>
+
+          <div class="diagram-panel">
+            <h3>Pythagoras' Theorem</h3>
+            <div class="diagram-grid">
+              <div class="svg-box">
+                <svg width="100%" height="260" viewBox="0 0 420 260" role="img" aria-label="Right angled triangle labelled a b c">
+                  <rect x="0" y="0" width="420" height="260" fill="#ffffff" />
+                  <polygon points="80,210 350,210 350,70" fill="#ecfeff" stroke="#123c69" stroke-width="4" />
+                  <polyline points="330,210 330,190 350,190" fill="none" stroke="#0f172a" stroke-width="3" />
+                  <text x="205" y="235" font-size="20" fill="#0f172a">a</text>
+                  <text x="365" y="145" font-size="20" fill="#0f172a">b</text>
+                  <text x="202" y="125" font-size="20" fill="#0f172a" transform="rotate(-27 202 125)">c</text>
+                </svg>
+              </div>
+              <div>
+                <p>The hypotenuse is the longest side and is opposite the right angle.</p>
+                <div class="formula-box">\[c^2=a^2+b^2\]</div>
+                <p>If finding one shorter side:</p>
+                <div class="formula-box">\[a=\sqrt{c^2-b^2}\]</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 6: Checking the Diagonal of a Room</h3>
+            <p>A rectangular room is $6\text{ m}$ long and $4\text{ m}$ wide. Find the diagonal length.</p>
+            <ol class="solution-steps">
+              <li>Use Pythagoras: \[c^2=a^2+b^2\]</li>
+              <li>Substitute: \[c^2=6^2+4^2\]</li>
+              <li>\[c^2=36+16=52\]</li>
+              <li>\[c=\sqrt{52}=7.21\text{ m}\]</li>
+              <li><strong>Answer:</strong> The diagonal is approximately $7.21\text{ m}$.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 7: The 3-4-5 Method for Setting Out</h3>
+            <p>A builder wants to check a right angle using sides $3\text{ m}$ and $4\text{ m}$. What should the diagonal be?</p>
+            <ol class="solution-steps">
+              <li>Use Pythagoras: \[c^2=3^2+4^2\]</li>
+              <li>\[c^2=9+16=25\]</li>
+              <li>\[c=\sqrt{25}=5\text{ m}\]</li>
+              <li><strong>Interpretation:</strong> If the diagonal is $5\text{ m}$, the corner is square.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="note-card" id="linear-graphs">
+          <span class="note-tag">Learning Outcome 3</span>
+          <h2>3. Apply Linear Graphs</h2>
+          <p>
+            A linear graph is a straight-line graph. It shows a relationship where one quantity changes at a constant rate
+            with another quantity. In building, linear graphs can represent cost, distance, temperature, velocity and production trends.
+          </p>
+
+          <h3>3.1 Data Set Identification</h3>
+          <p>
+            A data set is a collection of values. Before plotting a graph, identify the independent variable and dependent variable.
+          </p>
+
+          <div class="table-wrap">
+            <table class="notes-table">
+              <thead>
+                <tr>
+                  <th>Graph Type</th>
+                  <th>Independent Variable</th>
+                  <th>Dependent Variable</th>
+                  <th>Meaning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Distance against time</td>
+                  <td>Time</td>
+                  <td>Distance</td>
+                  <td>Distance depends on time travelled</td>
+                </tr>
+                <tr>
+                  <td>Temperature against time</td>
+                  <td>Time</td>
+                  <td>Temperature</td>
+                  <td>Temperature changes as time passes</td>
+                </tr>
+                <tr>
+                  <td>Velocity against time</td>
+                  <td>Time</td>
+                  <td>Velocity</td>
+                  <td>Velocity depends on time</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>3.2 Scales in Graphs</h3>
+          <p>
+            A scale shows how much each square or division on an axis represents. A good scale must fit the data clearly and use
+            convenient intervals such as 1, 2, 5, 10, 20 or 50.
+          </p>
+
+          <div class="warning-panel">
+            <h3>Graph scale rule</h3>
+            <p>
+              Do not choose a scale that compresses the graph into a small corner. The plotted graph should occupy most of the graph area.
+            </p>
+          </div>
+
+          <h3>3.3 Axes Labelling</h3>
+          <p>
+            Axes must be labelled with the quantity and the unit. For example, write <strong>Time (s)</strong>, not just <strong>Time</strong>.
+          </p>
+
+          <div class="table-wrap">
+            <table class="notes-table">
+              <thead>
+                <tr>
+                  <th>Axis</th>
+                  <th>Usually Represents</th>
+                  <th>Example Label</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>x-axis</td>
+                  <td>Independent variable</td>
+                  <td>Time (min)</td>
+                </tr>
+                <tr>
+                  <td>y-axis</td>
+                  <td>Dependent variable</td>
+                  <td>Distance (m)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>3.4 Linear Graph Plotting</h3>
+          <p>
+            To plot a linear graph, draw axes, choose a suitable scale, label the axes, plot points accurately and join them with a straight line.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Straight Line Equation and Gradient</h3>
+            <div class="formula-list">
+              <div class="formula-box">\[y=mx+c\]</div>
+              <div class="formula-box">\[m=\frac{\text{change in }y}{\text{change in }x}=\frac{y_2-y_1}{x_2-x_1}\]</div>
+              <div class="formula-box">\[c=\text{y-intercept}\]</div>
+              <div class="formula-box">\[\text{Straight line means constant gradient}\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 8: Plotting a Linear Cost Graph</h3>
+            <p>A delivery service charges a fixed fee of KSh 500 plus KSh 200 per trip. The cost equation is:</p>
+            <div class="formula-box">\[C=200n+500\]</div>
+            <p>Find the cost for $n=0,1,2,3,4$ trips.</p>
+            <div class="table-wrap">
+              <table class="notes-table">
+                <thead>
+                  <tr>
+                    <th>Trips $n$</th>
+                    <th>0</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cost $C$</td>
+                    <td>500</td>
+                    <td>700</td>
+                    <td>900</td>
+                    <td>1100</td>
+                    <td>1300</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ol class="solution-steps">
+              <li>Plot the points $(0,500)$, $(1,700)$, $(2,900)$, $(3,1100)$ and $(4,1300)$.</li>
+              <li>Join the points using a straight line.</li>
+              <li>The gradient is $200$, meaning cost increases by KSh 200 per trip.</li>
+              <li>The intercept is $500$, meaning the fixed charge is KSh 500.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="note-card" id="graph-applications">
+          <span class="note-tag">Graph applications</span>
+          <h2>4. Graph Applications in Building and Engineering</h2>
+
+          <h3>4.1 Distance Against Time</h3>
+          <p>
+            A distance-time graph shows how far an object or worker moves with time. The gradient represents speed.
+          </p>
+
+          <div class="formula-panel">
+            <div class="formula-box">\[\text{Speed}=\frac{\text{distance}}{\text{time}}\]</div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 9: Speed from a Distance-Time Graph</h3>
+            <p>A site vehicle moves $120\text{ m}$ in $40\text{ s}$. Find the speed.</p>
+            <ol class="solution-steps">
+              <li>Use speed formula: \[v=\frac{d}{t}\]</li>
+              <li>Substitute: \[v=\frac{120}{40}=3\text{ m/s}\]</li>
+              <li><strong>Answer:</strong> The speed is $3\text{ m/s}$.</li>
+            </ol>
+          </div>
+
+          <h3>4.2 Temperature Against Time</h3>
+          <p>
+            A temperature-time graph can be used when monitoring curing conditions, heating, cooling or environmental site conditions.
+          </p>
+
+          <div class="worked-example">
+            <h3>Worked Example 10: Temperature Change Rate</h3>
+            <p>Concrete curing temperature changes from $20^\circ\text{C}$ to $32^\circ\text{C}$ in 6 hours. Find the average rate of change.</p>
+            <ol class="solution-steps">
+              <li>Temperature change: \[32-20=12^\circ\text{C}\]</li>
+              <li>Rate of change: \[\frac{12}{6}=2^\circ\text{C/h}\]</li>
+              <li><strong>Answer:</strong> The average temperature increase is $2^\circ\text{C}$ per hour.</li>
+            </ol>
+          </div>
+
+          <h3>4.3 Velocity Against Time</h3>
+          <p>
+            A velocity-time graph shows motion. The gradient represents acceleration, while the area under the graph represents distance travelled.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Velocity-Time Graph Formulae</h3>
+            <div class="formula-list">
+              <div class="formula-box">\[\text{Acceleration}=\frac{\text{change in velocity}}{\text{time taken}}\]</div>
+              <div class="formula-box">\[\text{Distance}=\text{area under velocity-time graph}\]</div>
+              <div class="formula-box">For rectangle area: \[A=bh\]</div>
+              <div class="formula-box">For triangle area: \[A=\frac{1}{2}bh\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 11: Acceleration from Velocity-Time Data</h3>
+            <p>A hoist changes velocity from $0\text{ m/s}$ to $4\text{ m/s}$ in $8\text{ s}$. Find the acceleration.</p>
+            <ol class="solution-steps">
+              <li>Use acceleration formula: \[a=\frac{v-u}{t}\]</li>
+              <li>Substitute: \[a=\frac{4-0}{8}=0.5\text{ m/s}^2\]</li>
+              <li><strong>Answer:</strong> The acceleration is $0.5\text{ m/s}^2$.</li>
+            </ol>
+          </div>
+
+          <h3>4.4 Graph Analysis</h3>
+          <p>
+            Graph analysis means explaining what the graph shows. A professional interpretation should mention the variables,
+            units, trend, gradient, intercept, maximum and minimum values, and the practical meaning of the graph.
+          </p>
+
+          <div class="warning-panel">
+            <h3>Graph analysis checklist</h3>
+            <ol class="solution-steps">
+              <li>Read the title of the graph.</li>
+              <li>Identify the x-axis and y-axis quantities.</li>
+              <li>Check the units and scale.</li>
+              <li>Identify the highest and lowest values.</li>
+              <li>Determine whether the graph is increasing, decreasing or constant.</li>
+              <li>Calculate gradient where required.</li>
+              <li>Interpret the result in the building or engineering context.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="task-panel" id="practice">
+          <h2>Practice Questions for Building Students</h2>
+          <ol class="solution-steps">
+            <li>A ladder $5\text{ m}$ long leans against a wall at an angle of $70^\circ$ to the ground. Find the vertical height reached.</li>
+            <li>A ramp rises $0.6\text{ m}$ over a horizontal distance of $5\text{ m}$. Find the angle of inclination.</li>
+            <li>A roof rises $2.1\text{ m}$ over a horizontal span of $6\text{ m}$. Calculate the pitch angle.</li>
+            <li>Find the area of a rectangular floor measuring $7.5\text{ m}$ by $4.2\text{ m}$.</li>
+            <li>Find the area of a triangular gable with base $10\text{ m}$ and height $3\text{ m}$.</li>
+            <li>A rectangular room measures $8\text{ m}$ by $6\text{ m}$. Use Pythagoras' theorem to find the diagonal.</li>
+            <li>A right-angled triangle has hypotenuse $13\text{ m}$ and one shorter side $5\text{ m}$. Find the other shorter side.</li>
+            <li>Plot the graph of $y=2x+3$ for $x=0,1,2,3,4$.</li>
+            <li>A site vehicle travels $150\text{ m}$ in $50\text{ s}$. Find the speed.</li>
+            <li>Temperature changes from $18^\circ\text{C}$ to $30^\circ\text{C}$ in 4 hours. Find the average rate of temperature change.</li>
+            <li>A hoist increases velocity from $1\text{ m/s}$ to $5\text{ m/s}$ in $8\text{ s}$. Find the acceleration.</li>
+            <li>State four rules for drawing a professional linear graph.</li>
+          </ol>
+        </section>
+
+        <section class="note-card" id="summary">
+          <span class="note-tag">Competency checklist</span>
+          <h2>Summary Checklist</h2>
+          <div class="two-col">
+            <div class="mini-card">
+              <h3>A competent learner can:</h3>
+              <ul>
+                <li>Identify opposite, adjacent and hypotenuse sides.</li>
+                <li>Apply sine, cosine and tangent ratios correctly.</li>
+                <li>Use inverse trigonometry to find angles.</li>
+                <li>Calculate areas of common geometrical figures.</li>
+                <li>Apply Pythagoras' theorem to building layouts.</li>
+                <li>Identify independent and dependent variables.</li>
+                <li>Select suitable graph scales and label axes correctly.</li>
+                <li>Plot and analyse linear graphs.</li>
+                <li>Interpret distance-time, temperature-time and velocity-time graphs.</li>
+              </ul>
+            </div>
+            <div class="mini-card">
+              <h3>Common mistakes to avoid:</h3>
+              <ul>
+                <li>Using trigonometry without drawing and labelling a triangle.</li>
+                <li>Confusing opposite and adjacent sides.</li>
+                <li>Using calculator radian mode instead of degree mode.</li>
+                <li>Applying Pythagoras' theorem to a triangle that is not right-angled.</li>
+                <li>Writing area answers without square units.</li>
+                <li>Choosing poor graph scales.</li>
+                <li>Forgetting units on graph axes.</li>
+                <li>Describing graph trends without explaining their practical meaning.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Mr Mwirigi Mathematics Training Hub</h3>
+        <p>Professional engineering mathematics notes for Civil Engineering, Building Technology and Land Survey trainees.</p>
+      </div>
+      <div>
+        <h4>Quick Access</h4>
+        <a href="./assignments.html">Assignments</a>
+        <a href="./revision.html">Revision</a>
+        <a href="./references.html">References</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Learning Areas</h4>
+        <a href="./civil.html">Civil Engineering</a>
+        <a href="./building.html">Building Technology</a>
+        <a href="./land-survey.html">Land Survey</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 Mr Mwirigi Mathematics Training Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
+
+
 </section>
 </main>
 <footer class="site-footer"><div class="container footer-grid">
