@@ -1,38 +1,189 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Engineering Mathematics II | Mr Mwirigi Mathematics Training Hub</title><link rel="stylesheet" href="../css/style.css"/><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Engineering Mathematics II for Building Technology | Mr Mwirigi Mathematics Training Hub</title><link rel="stylesheet" href="../css/style.css"/>
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body>
 <header class="site-header"><div class="container nav-wrap">
 <a class="brand" href="../index.html"><span class="brand-mark">∑</span><span>Mr Mwirigi Mathematics Training Hub</span></a>
 <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
 <nav class="site-nav" aria-label="Main navigation">
-<a href="index.html">Home</a><a href="../civil.html">Civil</a><a href="../building.html">Building</a><a href="../land-survey.html">Land Survey</a><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../about.html">About</a><a href="../contact.html">Contact</a>
+<a href="index.html">Home</a><a href="../civil.html">Civil</a><a href="../building.html">Building</a><a href="../land-survey.html">Land Survey</a><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../references.html">References</a><a href="../contact.html">Contact</a>
 </nav></div></header>
 <main>
-<section class="page-hero"><div class="container"><p class="eyebrow">Building Technology</p><h1>Engineering Mathematics II</h1><p>Advanced construction calculations, calculus, vectors, matrices, and data interpretation.</p></div></section>
-<section class="container section"><div class="split-panel"><div><h2>Professional learner notes</h2><p>The learner notes are expanded into a full engineering-mathematics booklet with explanations, formulas, worked-example methods, exercises, applications and references.</p></div><div><h2>Coverage</h2><ul class="check-list"><li>Advanced Algebra</li><li>Differentiation and Integration</li><li>Vectors in Building Technology</li><li>Matrices</li><li>Construction Data Analysis</li><li>Measurement and Estimation Applications</li></ul></div></div></section>
-<section class="container section"><div class="section-heading"><p class="eyebrow">Download materials</p><h2>Learning resources</h2></div><div class="cards three">
-<article class="card"><h3>Learner Notes</h3><p>Comprehensive notes with professional formula presentation and engineering applications.</p><a class="btn secondary" href="../materials/building/building-engineering-mathematics-ii-notes.pdf" target="_blank">Download Notes</a></article>
-<article class="card"><h3>Assignment 1</h3><p>Questions only. Learners should show full working and interpretation.</p><a class="btn secondary" href="../assignments/building/building-engineering-mathematics-ii-assignment-1.pdf" target="_blank">Download Assignment</a></article>
-<article class="card"><h3>Revision Booklet</h3><p>Practice questions for CAT and summative assessment preparation.</p><a class="btn secondary" href="../revision/building/building-engineering-mathematics-ii-revision.pdf" target="_blank">Download Revision</a></article>
-</div></section>
-<section class="container section content-page"><h2>Key formulas</h2><p>These formulas render professionally using MathJax.</p>\[
-\frac{dy}{dx}=f'(x)
-\]
-\[
-\int_a^b f(x)\,dx
-\]
-\[
-\vec{R}=\vec{A}+\vec{B}
-\]
-\[
-AX=B
-\]
-\[
-s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}
-\]<h2>Application areas</h2><ul class="check-list"><li>cost optimization</li><li>load components</li><li>simultaneous quantity equations</li><li>material-test data</li><li>estimation checks</li></ul></section>
-<section class="container section"><div class="notice"><h2>Trainer note</h2><p>Answer guides are stored separately in the trainer folder and are not linked on learner pages.</p></div></section>
+<section class="page-hero"><div class="container"><p class="eyebrow">Building Technology</p><h1>Engineering Mathematics II for Building Technology</h1><p>Advanced algebra, calculus, vectors, matrices and construction data interpretation.</p></div></section>
+<section class="container section">
+  <div class="cards three">
+    <article class="card"><h3>Learner Notes PDF</h3><p>Download the printable professional notes for this topic.</p><a class="btn secondary" href="../materials/building/building-engineering-mathematics-ii-notes.pdf" target="_blank">Download Notes</a></article>
+    <article class="card"><h3>Assignment</h3><p>Questions only for learner submission.</p><a class="btn secondary" href="../assignments/building/building-engineering-mathematics-ii-assignment-1.pdf" target="_blank">Download Assignment</a></article>
+    <article class="card"><h3>Revision</h3><p>Revision booklet for CAT and summative preparation.</p><a class="btn secondary" href="../revision/building/building-engineering-mathematics-ii-revision.pdf" target="_blank">Download Revision</a></article>
+  </div>
+</section>
+<section class="container section lesson-layout">
+  <aside class="toc-card">
+    <h3>Topic sections</h3>
+    <a href="#s1">1. Advanced algebra</a><a href="#s2">2. Calculus</a><a href="#s3">3. Vectors</a><a href="#s4">4. Matrices</a><a href="#s5">5. Construction data</a>
+    <h3>Downloads</h3>
+    <a href="../materials/building/building-engineering-mathematics-ii-notes.pdf" target="_blank">Learner Notes PDF</a>
+    <a href="../assignments/building/building-engineering-mathematics-ii-assignment-1.pdf" target="_blank">Assignment PDF</a>
+    <a href="../revision/building/building-engineering-mathematics-ii-revision.pdf" target="_blank">Revision PDF</a>
+  </aside>
+  <div>
+    <section class="lesson-block">
+      <span class="note-tag">Formula summary</span>
+      <h2>Key formulas</h2>
+      <p>The formulas below are rendered using MathJax for professional mathematical display.</p>
+      <div class="formula-card"><strong>Derivative</strong>\[\frac{dy}{dx}=f'(x)\]</div><div class="formula-card"><strong>Definite integral</strong>\[\int_a^b f(x)\,dx\]</div><div class="formula-card"><strong>Vector resultant</strong>\[\vec{R}=\vec{A}+\vec{B}\]</div><div class="formula-card"><strong>Matrix system</strong>\[AX=B\]</div><div class="formula-card"><strong>Standard deviation</strong>\[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div>
+      <h3>Application areas</h3>
+      <ul class="check-list"><li>cost optimization</li><li>load components</li><li>matrix planning</li><li>material-test data</li><li>estimation checks</li></ul>
+    </section>
+    
+        <section class="lesson-block" id="s1">
+          <span class="note-tag">Section 1</span>
+          <h2>Advanced algebra</h2>
+          <p>Equations, functions and construction formulas.</p>
+          <p>In building technology, this concept supports technical judgement in tasks such as cost optimization. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
+          <h3>Core formula</h3>
+          <div class="formula-card">\[\frac{dy}{dx}=f'(x)\]</div>
+          <h3>Worked method</h3>
+          <div class="example-card">
+            <h4>Cost optimization</h4>
+            <p>Differentiate a quadratic cost function and find its stationary point.</p>
+            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
+          </div>
+          <h3>Common errors</h3>
+          <ul class="check-list">
+            <li>Using a formula before checking what each symbol means.</li>
+            <li>Mixing units such as mm, cm and m.</li>
+            <li>Rounding too early.</li>
+            <li>Giving a final number without technical interpretation.</li>
+          </ul>
+          <h3>Practice</h3>
+          <ol class="exercise-list">
+            <li>Create and solve one original problem involving cost optimization.</li>
+            <li>Explain the formula used and define every symbol.</li>
+            <li>State the answer with units and one technical interpretation.</li>
+          </ol>
+        </section>
+        
+        <section class="lesson-block" id="s2">
+          <span class="note-tag">Section 2</span>
+          <h2>Calculus</h2>
+          <p>Differentiation and integration in quantity and cost models.</p>
+          <p>In building technology, this concept supports technical judgement in tasks such as load components. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
+          <h3>Core formula</h3>
+          <div class="formula-card">\[\int_a^b f(x)\,dx\]</div>
+          <h3>Worked method</h3>
+          <div class="example-card">
+            <h4>Load components</h4>
+            <p>Resolve a load into horizontal and vertical components.</p>
+            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
+          </div>
+          <h3>Common errors</h3>
+          <ul class="check-list">
+            <li>Using a formula before checking what each symbol means.</li>
+            <li>Mixing units such as mm, cm and m.</li>
+            <li>Rounding too early.</li>
+            <li>Giving a final number without technical interpretation.</li>
+          </ul>
+          <h3>Practice</h3>
+          <ol class="exercise-list">
+            <li>Create and solve one original problem involving load components.</li>
+            <li>Explain the formula used and define every symbol.</li>
+            <li>State the answer with units and one technical interpretation.</li>
+          </ol>
+        </section>
+        
+        <section class="lesson-block" id="s3">
+          <span class="note-tag">Section 3</span>
+          <h2>Vectors</h2>
+          <p>Components of loads and directions.</p>
+          <p>In building technology, this concept supports technical judgement in tasks such as matrix planning. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
+          <h3>Core formula</h3>
+          <div class="formula-card">\[\vec{R}=\vec{A}+\vec{B}\]</div>
+          <h3>Worked method</h3>
+          <div class="example-card">
+            <h4>Quantity equations</h4>
+            <p>Use simultaneous equations to solve material quantities.</p>
+            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
+          </div>
+          <h3>Common errors</h3>
+          <ul class="check-list">
+            <li>Using a formula before checking what each symbol means.</li>
+            <li>Mixing units such as mm, cm and m.</li>
+            <li>Rounding too early.</li>
+            <li>Giving a final number without technical interpretation.</li>
+          </ul>
+          <h3>Practice</h3>
+          <ol class="exercise-list">
+            <li>Create and solve one original problem involving matrix planning.</li>
+            <li>Explain the formula used and define every symbol.</li>
+            <li>State the answer with units and one technical interpretation.</li>
+          </ol>
+        </section>
+        
+        <section class="lesson-block" id="s4">
+          <span class="note-tag">Section 4</span>
+          <h2>Matrices</h2>
+          <p>Simultaneous equations and quantity planning.</p>
+          <p>In building technology, this concept supports technical judgement in tasks such as material-test data. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
+          <h3>Core formula</h3>
+          <div class="formula-card">\[AX=B\]</div>
+          <h3>Worked method</h3>
+          <div class="example-card">
+            <h4>Cost optimization</h4>
+            <p>Differentiate a quadratic cost function and find its stationary point.</p>
+            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
+          </div>
+          <h3>Common errors</h3>
+          <ul class="check-list">
+            <li>Using a formula before checking what each symbol means.</li>
+            <li>Mixing units such as mm, cm and m.</li>
+            <li>Rounding too early.</li>
+            <li>Giving a final number without technical interpretation.</li>
+          </ul>
+          <h3>Practice</h3>
+          <ol class="exercise-list">
+            <li>Create and solve one original problem involving material-test data.</li>
+            <li>Explain the formula used and define every symbol.</li>
+            <li>State the answer with units and one technical interpretation.</li>
+          </ol>
+        </section>
+        
+        <section class="lesson-block" id="s5">
+          <span class="note-tag">Section 5</span>
+          <h2>Construction data</h2>
+          <p>Statistics and quality interpretation.</p>
+          <p>In building technology, this concept supports technical judgement in tasks such as estimation checks. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
+          <h3>Core formula</h3>
+          <div class="formula-card">\[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div>
+          <h3>Worked method</h3>
+          <div class="example-card">
+            <h4>Load components</h4>
+            <p>Resolve a load into horizontal and vertical components.</p>
+            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
+          </div>
+          <h3>Common errors</h3>
+          <ul class="check-list">
+            <li>Using a formula before checking what each symbol means.</li>
+            <li>Mixing units such as mm, cm and m.</li>
+            <li>Rounding too early.</li>
+            <li>Giving a final number without technical interpretation.</li>
+          </ul>
+          <h3>Practice</h3>
+          <ol class="exercise-list">
+            <li>Create and solve one original problem involving estimation checks.</li>
+            <li>Explain the formula used and define every symbol.</li>
+            <li>State the answer with units and one technical interpretation.</li>
+          </ol>
+        </section>
+        
+  </div>
+</section>
+<section class="container section"><div class="notice"><h2>Trainer note</h2><p>The trainer guide is stored separately in the <code>trainer/</code> folder and is not linked publicly on learner pages.</p></div></section>
 </main>
 <footer class="site-footer"><div class="container footer-grid">
-<div><h3>Mr Mwirigi Mathematics Training Hub</h3><p>Engineering mathematics learning support for Civil Engineering, Building Technology, and Land Survey trainees.</p></div>
-<div><h4>Quick Access</h4><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision Materials</a><a href="../contact.html">Contact Trainer</a></div>
+<div><h3>Mr Mwirigi Mathematics Training Hub</h3><p>Professional engineering mathematics support for Civil Engineering, Building Technology and Land Survey trainees.</p></div>
+<div><h4>Quick Access</h4><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision Materials</a><a href="../references.html">References</a><a href="../contact.html">Contact Trainer</a></div>
 <div><h4>Learning Areas</h4><a href="../civil.html">Civil Engineering Mathematics</a><a href="../building.html">Building Technology Mathematics</a><a href="../land-survey.html">Land Survey Mathematics</a></div>
 </div><div class="copyright"><p>© 2026 Mr Mwirigi Mathematics Training Hub. All rights reserved.</p></div></footer>
 <script src="../js/main.js"></script></body></html>

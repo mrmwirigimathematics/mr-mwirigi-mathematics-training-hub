@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Calculus and Differential Methods | Mr Mwirigi Mathematics Training Hub</title><link rel="stylesheet" href="../css/style.css"/>
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark">∑</span><span>Mr Mwirigi Mathematics Training Hub</span></a>
+<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html">Home</a><a href="../civil.html">Civil</a><a href="../building.html">Building</a><a href="../land-survey.html">Land Survey</a><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../references.html">References</a><a href="../contact.html">Contact</a>
+</nav></div></header>
+<main>
+<section class="page-hero"><div class="container"><p class="eyebrow">Civil Engineering</p><h1>Calculus and Differential Methods</h1><p>Differentiation, integration, ordinary differential equations and numerical methods for civil engineering problems.</p></div></section>
+<section class="container section">
+  <div class="cards three">
+    <article class="card"><h3>Learner Notes PDF</h3><p>Download the printable professional notes for this topic.</p><a class="btn secondary" href="../materials/civil/civil-calculus-differential-methods-notes.pdf" target="_blank">Download Notes</a></article>
+    <article class="card"><h3>Assignment</h3><p>Questions only for learner submission.</p><a class="btn secondary" href="../assignments/civil/civil-calculus-differential-methods-assignment-1.pdf" target="_blank">Download Assignment</a></article>
+    <article class="card"><h3>Revision</h3><p>Revision booklet for CAT and summative preparation.</p><a class="btn secondary" href="../revision/civil/civil-calculus-differential-methods-revision.pdf" target="_blank">Download Revision</a></article>
+  </div>
+</section>
+<section class="container section lesson-layout">
+  <aside class="toc-card">
+    <h3>Topic sections</h3>
+    <a href="#s1">1. Rates of change</a><a href="#s2">2. Differentiation rules</a><a href="#s3">3. Applications of differentiation</a><a href="#s4">4. Integration</a><a href="#s5">5. Differential equations and numerical methods</a>
+    <h3>Downloads</h3>
+    <a href="../materials/civil/civil-calculus-differential-methods-notes.pdf" target="_blank">Learner Notes PDF</a>
+    <a href="../assignments/civil/civil-calculus-differential-methods-assignment-1.pdf" target="_blank">Assignment PDF</a>
+    <a href="../revision/civil/civil-calculus-differential-methods-revision.pdf" target="_blank">Revision PDF</a>
+  </aside>
+  <div>
+    <section class="lesson-block">
+      <span class="note-tag">Formula summary</span>
+      <h2>Key formulas</h2>
+      <p>The formulas below are rendered using MathJax for professional mathematical display.</p>
+      <div class="formula-card"><strong>Power rule</strong>\[\frac{d}{dx}(ax^n)=anx^{n-1}\]</div><div class="formula-card"><strong>Basic integration</strong>\[\int ax^n\,dx=\frac{ax^{n+1}}{n+1}+C\]</div><div class="formula-card"><strong>First-order linear ODE</strong>\[\frac{dy}{dx}+P(x)y=Q(x)\]</div><div class="formula-card"><strong>Newton-Raphson</strong>\[x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}\]</div><div class="formula-card"><strong>Trapezoidal rule</strong>\[\int_a^b y\,dx\approx\frac{h}{2}\left[y_0+y_n+2\sum y_i\right]\]</div>
+      <h3>Application areas</h3>
+      <ul class="check-list"><li>road profiles</li><li>flow accumulation</li><li>settlement rate</li><li>area estimation</li><li>numerical solving</li></ul>
+    </section>
+    
+        <section class="lesson-block" id="s1">
+          <span class="note-tag">Section 1</span>
+          <h2>Rates of change</h2>
+          <p>Gradient and derivative as measures of engineering change.</p>
+          <p>In civil engineering, this concept supports technical judgement in tasks such as road profiles. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
+          <h3>Core formula</h3>
+          <div class="formula-card">\[\frac{d}{dx}(ax^n)=anx^{n-1}\]</div>
+          <h3>Worked method</h3>
+          <div class="example-card">
+            <h4>Road profile gradient</h4>
+            <p>For y = 0.02x² + 0.5x + 100, find the gradient at x = 20 m.</p>
+            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
+          </div>
+          <h3>Common errors</h3>
+          <ul class="check-list">
+            <li>Using a formula before checking what each symbol means.</li>
+            <li>Mixing units such as mm, cm and m.</li>
+            <li>Rounding too early.</li>
+            <li>Giving a final number without technical interpretation.</li>
+          </ul>
+          <h3>Practice</h3>
+          <ol class="exercise-list">
+            <li>Create and solve one original problem involving road profiles.</li>
+            <li>Explain the formula used and define every symbol.</li>
+            <li>State the answer with units and one technical interpretation.</li>
+          </ol>
+        </section>
+        
+        <section class="lesson-block" id="s2">
+          <span class="note-tag">Section 2</span>
+          <h2>Differentiation rules</h2>
+          <p>Power, product, quotient and chain rules.</p>
+          <p>In civil engineering, this concept supports technical judgement in tasks such as flow accumulation. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
+          <h3>Core formula</h3>
+          <div class="formula-card">\[\int ax^n\,dx=\frac{ax^{n+1}}{n+1}+C\]</div>
+          <h3>Worked method</h3>
+          <div class="example-card">
+            <h4>Drainage area</h4>
+            <p>Find the area under y = 0.5x² + 1 from x = 0 to x = 4.</p>
+            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
+          </div>
+          <h3>Common errors</h3>
+          <ul class="check-list">
+            <li>Using a formula before checking what each symbol means.</li>
+            <li>Mixing units such as mm, cm and m.</li>
+            <li>Rounding too early.</li>
+            <li>Giving a final number without technical interpretation.</li>
+          </ul>
+          <h3>Practice</h3>
+          <ol class="exercise-list">
+            <li>Create and solve one original problem involving flow accumulation.</li>
+            <li>Explain the formula used and define every symbol.</li>
+            <li>State the answer with units and one technical interpretation.</li>
+          </ol>
+        </section>
+        
+        <section class="lesson-block" id="s3">
+          <span class="note-tag">Section 3</span>
+          <h2>Applications of differentiation</h2>
+          <p>Stationary values, tangents, maxima and minima.</p>
+          <p>In civil engineering, this concept supports technical judgement in tasks such as settlement rate. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
+          <h3>Core formula</h3>
+          <div class="formula-card">\[\frac{dy}{dx}+P(x)y=Q(x)\]</div>
+          <h3>Worked method</h3>
+          <div class="example-card">
+            <h4>Numerical root</h4>
+            <p>Use one Newton-Raphson iteration to approximate a root of f(x)=x³-4x-9 from x₀=2.5.</p>
+            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
+          </div>
+          <h3>Common errors</h3>
+          <ul class="check-list">
+            <li>Using a formula before checking what each symbol means.</li>
+            <li>Mixing units such as mm, cm and m.</li>
+            <li>Rounding too early.</li>
+            <li>Giving a final number without technical interpretation.</li>
+          </ul>
+          <h3>Practice</h3>
+          <ol class="exercise-list">
+            <li>Create and solve one original problem involving settlement rate.</li>
+            <li>Explain the formula used and define every symbol.</li>
+            <li>State the answer with units and one technical interpretation.</li>
+          </ol>
+        </section>
+        
+        <section class="lesson-block" id="s4">
+          <span class="note-tag">Section 4</span>
+          <h2>Integration</h2>
+          <p>Area under curves and accumulated quantities.</p>
+          <p>In civil engineering, this concept supports technical judgement in tasks such as area estimation. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
+          <h3>Core formula</h3>
+          <div class="formula-card">\[x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}\]</div>
+          <h3>Worked method</h3>
+          <div class="example-card">
+            <h4>Road profile gradient</h4>
+            <p>For y = 0.02x² + 0.5x + 100, find the gradient at x = 20 m.</p>
+            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
+          </div>
+          <h3>Common errors</h3>
+          <ul class="check-list">
+            <li>Using a formula before checking what each symbol means.</li>
+            <li>Mixing units such as mm, cm and m.</li>
+            <li>Rounding too early.</li>
+            <li>Giving a final number without technical interpretation.</li>
+          </ul>
+          <h3>Practice</h3>
+          <ol class="exercise-list">
+            <li>Create and solve one original problem involving area estimation.</li>
+            <li>Explain the formula used and define every symbol.</li>
+            <li>State the answer with units and one technical interpretation.</li>
+          </ol>
+        </section>
+        
+        <section class="lesson-block" id="s5">
+          <span class="note-tag">Section 5</span>
+          <h2>Differential equations and numerical methods</h2>
+          <p>First-order models, Newton-Raphson and approximate integration.</p>
+          <p>In civil engineering, this concept supports technical judgement in tasks such as numerical solving. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
+          <h3>Core formula</h3>
+          <div class="formula-card">\[\int_a^b y\,dx\approx\frac{h}{2}\left[y_0+y_n+2\sum y_i\right]\]</div>
+          <h3>Worked method</h3>
+          <div class="example-card">
+            <h4>Drainage area</h4>
+            <p>Find the area under y = 0.5x² + 1 from x = 0 to x = 4.</p>
+            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
+          </div>
+          <h3>Common errors</h3>
+          <ul class="check-list">
+            <li>Using a formula before checking what each symbol means.</li>
+            <li>Mixing units such as mm, cm and m.</li>
+            <li>Rounding too early.</li>
+            <li>Giving a final number without technical interpretation.</li>
+          </ul>
+          <h3>Practice</h3>
+          <ol class="exercise-list">
+            <li>Create and solve one original problem involving numerical solving.</li>
+            <li>Explain the formula used and define every symbol.</li>
+            <li>State the answer with units and one technical interpretation.</li>
+          </ol>
+        </section>
+        
+  </div>
+</section>
+<section class="container section"><div class="notice"><h2>Trainer note</h2><p>The trainer guide is stored separately in the <code>trainer/</code> folder and is not linked publicly on learner pages.</p></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid">
+<div><h3>Mr Mwirigi Mathematics Training Hub</h3><p>Professional engineering mathematics support for Civil Engineering, Building Technology and Land Survey trainees.</p></div>
+<div><h4>Quick Access</h4><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision Materials</a><a href="../references.html">References</a><a href="../contact.html">Contact Trainer</a></div>
+<div><h4>Learning Areas</h4><a href="../civil.html">Civil Engineering Mathematics</a><a href="../building.html">Building Technology Mathematics</a><a href="../land-survey.html">Land Survey Mathematics</a></div>
+</div><div class="copyright"><p>© 2026 Mr Mwirigi Mathematics Training Hub. All rights reserved.</p></div></footer>
+<script src="../js/main.js"></script></body></html>

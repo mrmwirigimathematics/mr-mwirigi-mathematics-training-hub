@@ -1,8 +1,16 @@
-# Mr Mwirigi Mathematics Training Hub - Full Professional Edition
+# Mr Mwirigi Mathematics Training Hub
 
-Complete GitHub Pages-ready static website with expanded engineering mathematics learner notes.
+Professional GitHub Pages-ready engineering mathematics website.
 
-## Notes
+## Included
+- Civil Engineering Mathematics
+- Building Technology Mathematics
+- Land Survey Mathematics
+- Topic pages with MathJax equations
+- Learner notes PDFs
+- Assignment PDFs
+- Revision PDFs
+- Trainer guides in /trainer/
 
-The notes are intentionally comprehensive and styled as learner booklets. The `/trainer/` folder contains answer guides. Do not upload it publicly if you want solutions to remain private.
-
+## Privacy
+Do not upload the trainer folder if you want answer guides to remain private.
