@@ -2,9 +2,11 @@ COMPLETE WEBSITE UPLOAD GUIDE
 
 1. Download and extract this ZIP.
 2. Open the extracted folder.
-3. Select everything inside the folder.
-4. Upload all files and folders to the root of your GitHub repository.
-5. Commit directly to the main branch.
-6. Wait a few minutes for GitHub Pages to update.
+3. Upload the website files to your GitHub repository root.
+4. Commit directly to the main branch.
+5. Wait a few minutes for GitHub Pages to update.
 
-This package keeps your current website design but adds full topic pages, notes, assignments, and revision materials.
+RECOMMENDED PRIVACY STEP:
+Do not upload the trainer/ folder if you want answer guides to remain private.
+
+This package keeps the website design and upgrades the learning materials.

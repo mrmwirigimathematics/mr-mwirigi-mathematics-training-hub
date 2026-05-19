@@ -1,7 +1,8 @@
-# Mr Mwirigi Mathematics Training Hub
+# Mr Mwirigi Mathematics Training Hub - Full Professional Edition
 
-Complete static website for Civil Engineering, Building Technology, and Land Survey mathematics trainees.
+Complete GitHub Pages-ready static website with expanded engineering mathematics learner notes.
 
-Upload all extracted files and folders to your GitHub repository root. Do not upload the ZIP itself.
+## Notes
 
-The `/trainer/` folder contains answer guides. Keep these private unless you intentionally want learners to access solutions.
+The notes are intentionally comprehensive and styled as learner booklets. The `/trainer/` folder contains answer guides. Do not upload it publicly if you want solutions to remain private.
+
