@@ -1,127 +1,967 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Engineering Mathematics III for Land Survey | Mr Mwirigi Mathematics Training Hub</title>
-<link rel="stylesheet" href="../css/style.css"/>
-<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head><body>
-<header class="site-header"><div class="container nav-wrap">
-<a class="brand" href="../index.html"><span class="brand-mark">∑</span><span>Mr Mwirigi Mathematics Training Hub</span></a>
-<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-<nav class="site-nav" aria-label="Main navigation">
-<a href="index.html">Home</a><a href="../civil.html">Civil</a><a href="../building.html">Building</a><a href="../land-survey.html">Land Survey</a><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../references.html">References</a><a href="../contact.html">Contact</a>
-</nav></div></header>
-<main>
-<section class="page-hero"><div class="container">
-<p class="eyebrow">Land Survey</p>
-<h1>Engineering Mathematics III for Land Survey</h1>
-<p>Statistics, probability, matrices, errors and adjustment concepts for higher land survey mathematics.</p>
-</div></section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Mathematics III for Land Survey | Statistics, Vectors and Matrices</title>
+  <link rel="stylesheet" href="../css/style.css" />
 
-<section class="container section lesson-layout">
-<aside class="toc-card">
-  <h3>Lesson menu</h3>
-  <a href="#s1">1. Survey data and repeated observations</a><a href="#s2">2. Dispersion and standard deviation</a><a href="#s3">3. Probability in quality decisions</a><a href="#s4">4. Matrices for survey adjustment</a><a href="#s5">5. Error interpretation</a>
-  <hr>
-  <button class="btn secondary" onclick="printPage()">Print / Save as PDF</button>
-</aside>
-<div>
-  <section class="lesson-card">
-    <span class="note-tag">Professional learner notes</span>
-    <h2>Purpose of the topic</h2>
-    <p>Engineering Mathematics III supports survey-data analysis, repeated observations, matrix correction equations and interpretation of measurement error.</p>
-    <p>These notes are written as class notes for engineering trainees. They follow the same working standard used in class: state the formula, substitute correctly, compute, attach units, and then explain what the answer means in a civil, building or survey situation.</p>
-  </section>
-  
-<section class="lesson-card" id="s1">
-  <span class="note-tag">Section 1</span>
-  <h2>Survey data and repeated observations</h2>
-  <p>Survey measurements are repeated to reduce blunders and estimate reliability.</p>
-  <h3>Key formulae</h3>
-  <div class="formula-box">\[\bar{x}=\frac{\sum x}{n}\]</div>
-  <div class="example-box">
-    <h3>Worked example</h3>
-    <p>Angles 45°10′, 45°12′ and 45°11′ average to 45°11′.</p>
-    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
-  </div>
-  <h3>Engineering interpretation</h3>
-  <p>Mean observations reduce random variation.</p>
-</section>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
-<section class="lesson-card" id="s2">
-  <span class="note-tag">Section 2</span>
-  <h2>Dispersion and standard deviation</h2>
-  <p>Dispersion shows how spread out observations are.</p>
-  <h3>Key formulae</h3>
-  <div class="formula-box">\[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div>
-  <div class="example-box">
-    <h3>Worked example</h3>
-    <p>Small standard deviation means observations are consistent.</p>
-    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
-  </div>
-  <h3>Engineering interpretation</h3>
-  <p>Used to judge reliability of repeated readings.</p>
-</section>
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #dbe3ef;
+      --soft: #f8fafc;
+      --panel: #ffffff;
+      --brand: #123c69;
+      --brand-2: #0f766e;
+      --accent: #f59e0b;
+      --danger: #b91c1c;
+      --purple: #6d28d9;
+      --shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+    }
 
-<section class="lesson-card" id="s3">
-  <span class="note-tag">Section 3</span>
-  <h2>Probability in quality decisions</h2>
-  <p>Probability estimates likelihood of acceptable or unacceptable observations.</p>
-  <h3>Key formulae</h3>
-  <div class="formula-box">\[P(A)=\frac{n(A)}{n(S)}\]</div>
-  <div class="example-box">
-    <h3>Worked example</h3>
-    <p>If 2 out of 20 readings are outside tolerance, sample probability=0.10.</p>
-    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
-  </div>
-  <h3>Engineering interpretation</h3>
-  <p>Supports quality-control judgement.</p>
-</section>
+    html { scroll-behavior: smooth; }
 
-<section class="lesson-card" id="s4">
-  <span class="note-tag">Section 4</span>
-  <h2>Matrices for survey adjustment</h2>
-  <p>Adjustment equations can be organised in matrix form.</p>
-  <h3>Key formulae</h3>
-  <div class="formula-box">\[AX=B\]</div>
-  <div class="example-box">
-    <h3>Worked example</h3>
-    <p>Correction equations for unknowns can be arranged in a coefficient matrix.</p>
-    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
-  </div>
-  <h3>Engineering interpretation</h3>
-  <p>Matrix methods support traverse and network adjustment.</p>
-</section>
+    body {
+      color: var(--ink);
+      background: #f3f6fb;
+      line-height: 1.72;
+    }
 
-<section class="lesson-card" id="s5">
-  <span class="note-tag">Section 5</span>
-  <h2>Error interpretation</h2>
-  <p>Error is difference between observed and accepted value.</p>
-  <h3>Key formulae</h3>
-  <div class="formula-box">\[e=\mathrm{observed}-\mathrm{true}\]</div>
-  <div class="example-box">
-    <h3>Worked example</h3>
-    <p>If observed distance is 100.026 m and accepted value is 100.000 m, error=0.026 m.</p>
-    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
-  </div>
-  <h3>Engineering interpretation</h3>
-  <p>Understanding error is central to survey accuracy.</p>
-</section>
+    .notes-hero {
+      background:
+        linear-gradient(135deg, rgba(18, 60, 105, 0.96), rgba(15, 118, 110, 0.88)),
+        radial-gradient(circle at top right, rgba(245, 158, 11, 0.35), transparent 42%);
+      color: #fff;
+      padding: 78px 0 60px;
+    }
 
-  <section class="exercise-box">
-    <h2>Practice exercises</h2>
-    <ol class="steps"><li>Find mean of 5 repeated distance observations.</li><li>Explain random and systematic error.</li><li>Find probability if 3 of 30 readings are outside tolerance.</li><li>Write two correction equations as AX=B.</li><li>Calculate error for observed 75.014 m and accepted 75.000 m.</li></ol>
-  </section>
-  <section class="summary-box">
-    <h2>Summary</h2>
-    <p>By the end of this topic, a competent trainee should be able to identify the correct formula, perform the calculation accurately, use correct units, and explain the result in a real engineering context.</p>
-  </section>
-</div>
-</section>
-</main>
-<footer class="site-footer"><div class="container footer-grid">
-<div><h3>Mr Mwirigi Mathematics Training Hub</h3><p>Professional engineering mathematics notes for Civil Engineering, Building Technology and Land Survey trainees.</p></div>
-<div><h4>Quick Access</h4><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../references.html">References</a><a href="../contact.html">Contact</a></div>
-<div><h4>Learning Areas</h4><a href="../civil.html">Civil Engineering</a><a href="../building.html">Building Technology</a><a href="../land-survey.html">Land Survey</a></div>
-</div><div class="copyright"><p>© 2026 Mr Mwirigi Mathematics Training Hub. All rights reserved.</p></div></footer>
-<script src="../js/main.js"></script></body></html>
+    .notes-hero .eyebrow {
+      color: #fde68a;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .notes-hero h1 {
+      max-width: 1100px;
+      font-size: clamp(2rem, 4vw, 4rem);
+      line-height: 1.05;
+      margin: 0 0 18px;
+    }
+
+    .notes-hero p {
+      max-width: 960px;
+      font-size: 1.08rem;
+      color: #e2e8f0;
+    }
+
+    .lesson-shell {
+      display: grid;
+      grid-template-columns: 330px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .toc-card {
+      position: sticky;
+      top: 90px;
+      max-height: calc(100vh - 120px);
+      overflow: auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+
+    .toc-card h3 {
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+
+    .toc-card a {
+      display: block;
+      padding: 9px 11px;
+      margin: 5px 0;
+      border-radius: 12px;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid transparent;
+      font-size: 0.94rem;
+    }
+
+    .toc-card a:hover {
+      background: #eef6ff;
+      border-color: #bfdbfe;
+    }
+
+    .note-card,
+    .formula-panel,
+    .worked-example,
+    .task-panel,
+    .warning-panel,
+    .definition-panel,
+    .diagram-panel,
+    .subtopic-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 26px;
+      margin-bottom: 24px;
+    }
+
+    .note-card h2,
+    .note-card h3,
+    .subtopic-card h3 {
+      line-height: 1.25;
+    }
+
+    .note-card h2 {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+
+    .subtopic-card h3 {
+      margin-top: 0;
+      color: var(--brand);
+    }
+
+    .note-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+    }
+
+    .outcome-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .outcome-item {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .outcome-item strong {
+      color: var(--brand);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .formula-panel {
+      background: #f8fbff;
+      border-left: 6px solid var(--brand);
+    }
+
+    .formula-panel h3 {
+      margin-top: 0;
+      color: var(--brand);
+    }
+
+    .definition-panel {
+      background: #f5f3ff;
+      border-left: 6px solid var(--purple);
+    }
+
+    .definition-panel h3 {
+      margin-top: 0;
+      color: var(--purple);
+    }
+
+    .formula-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .formula-box {
+      background: #ffffff;
+      border: 1px solid #dbeafe;
+      border-radius: 14px;
+      padding: 14px;
+      overflow-x: auto;
+    }
+
+    .worked-example {
+      border-left: 6px solid var(--brand-2);
+    }
+
+    .worked-example h3 {
+      margin-top: 0;
+      color: var(--brand-2);
+    }
+
+    .solution-steps {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .solution-steps li { margin-bottom: 8px; }
+
+    .warning-panel {
+      background: #fff7ed;
+      border-left: 6px solid var(--accent);
+    }
+
+    .warning-panel h3 {
+      margin-top: 0;
+      color: #92400e;
+    }
+
+    .diagram-panel { background: #f8fafc; }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+    }
+
+    table.notes-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      min-width: 760px;
+    }
+
+    .notes-table th,
+    .notes-table td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .notes-table th {
+      background: #eaf2ff;
+      color: #123c69;
+      font-weight: 800;
+    }
+
+    .notes-table tr:last-child td { border-bottom: 0; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .mini-card {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .mini-card h3 { margin-top: 0; }
+
+    .task-panel {
+      background: #f8fafc;
+      border-left: 6px solid #334155;
+    }
+
+    .task-panel h2,
+    .task-panel h3 { margin-top: 0; }
+
+    .site-note {
+      background: #ecfeff;
+      border: 1px solid #a5f3fc;
+      border-radius: 14px;
+      padding: 14px 16px;
+      color: #164e63;
+      font-weight: 600;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .print-btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 18px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .print-btn.secondary {
+      background: #e2e8f0;
+      color: var(--ink);
+    }
+
+    .page-break { page-break-before: always; }
+
+    @media (max-width: 1100px) {
+      .lesson-shell,
+      .outcome-grid,
+      .formula-list,
+      .two-col,
+      .three-col {
+        grid-template-columns: 1fr;
+      }
+      .toc-card { position: static; max-height: none; }
+    }
+
+    @media print {
+      .site-header,
+      .site-footer,
+      .toc-card,
+      .btn-row { display: none !important; }
+      body { background: #fff; }
+      .note-card,
+      .formula-panel,
+      .worked-example,
+      .task-panel,
+      .warning-panel,
+      .definition-panel,
+      .diagram-panel,
+      .subtopic-card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html"><span class="brand-mark">∑</span><span>Mr Mwirigi Mathematics Training Hub</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="../civil.html">Civil</a>
+        <a href="../building.html">Building</a>
+        <a href="../land-survey.html">Land Survey</a>
+        <a href="../assignments.html">Assignments</a>
+        <a href="../revision.html">Revision</a>
+        <a href="../references.html">References</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="notes-hero">
+      <div class="container">
+        <p class="eyebrow">Land Survey · Engineering Mathematics III</p>
+        <h1>Professional Notes on Statistics, Probability, Vector Theory and Matrices</h1>
+        <p>
+          A complete land survey mathematics reference for repeated observations, statistical reliability,
+          probability distributions, vector field operations, matrix inverses and simultaneous equation models used in survey adjustment.
+        </p>
+        <div class="btn-row">
+          <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+          <button class="print-btn secondary" onclick="location.href='#practice'">Go to Practice Questions</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section lesson-shell">
+      <aside class="toc-card">
+        <h3>Lesson Menu</h3>
+        <a href="#overview">Topic overview</a>
+        <a href="#stats-intro">1. Statistics and probability</a>
+        <a href="#mean">1.1 Mean</a>
+        <a href="#median">1.2 Median</a>
+        <a href="#mode">1.3 Mode</a>
+        <a href="#std-dev">1.4 Standard deviation</a>
+        <a href="#grouped-data">1.5 Grouped and ungrouped data</a>
+        <a href="#probability">1.6 Probability concepts</a>
+        <a href="#binomial">1.7 Binomial distribution</a>
+        <a href="#poisson">1.8 Poisson distribution</a>
+        <a href="#normal">1.9 Normal distribution</a>
+        <a href="#vectors">2. Vector theory</a>
+        <a href="#scalar-vector">2.1 Scalars and vectors</a>
+        <a href="#vector-algebra">2.2 Vector algebra</a>
+        <a href="#dot-cross">2.3 Dot and cross products</a>
+        <a href="#grad-div-curl">2.4 Gradient, divergence and curl</a>
+        <a href="#matrices">3. Matrices</a>
+        <a href="#matrix-2x2">3.1 Determinant and inverse of 2×2</a>
+        <a href="#matrix-3x3">3.2 Determinant and inverse of 3×3</a>
+        <a href="#simultaneous">3.3 Simultaneous equations</a>
+        <a href="#practice">Practice questions</a>
+        <a href="#summary">Summary checklist</a>
+      </aside>
+
+      <div>
+        <section class="note-card" id="overview">
+          <span class="note-tag">Professional learner notes</span>
+          <h2>Topic Overview</h2>
+          <p>
+            Engineering Mathematics III for Land Survey supports the treatment of survey observations as numerical evidence.
+            Surveyors collect repeated distance, bearing, level, coordinate and angular observations. Mathematics is then used to
+            summarise the data, estimate reliability, model uncertainty, resolve coordinates and solve adjustment equations.
+          </p>
+
+          <div class="outcome-grid">
+            <div class="outcome-item">
+              <strong>Learning Outcome 1: Apply statistics and probability</strong>
+              Measures of central tendency, standard deviation, grouped and ungrouped data, and probability distributions.
+            </div>
+            <div class="outcome-item">
+              <strong>Learning Outcome 2: Apply vector theory</strong>
+              Vector and scalar quantities, vector algebra, dot and cross products, gradient, divergence and curl.
+            </div>
+            <div class="outcome-item">
+              <strong>Learning Outcome 3: Apply matrices</strong>
+              Determinants, inverses of 2×2 and 3×3 matrices, and solution of simultaneous equations.
+            </div>
+          </div>
+
+          <p class="site-note">
+            Survey calculation discipline: define the observed quantities, write the correct formula, substitute values carefully,
+            compute with appropriate precision, attach units and interpret the result in a surveying context.
+          </p>
+        </section>
+
+        <section class="note-card" id="stats-intro">
+          <span class="note-tag">Learning Outcome 1</span>
+          <h2>1. Apply Statistics and Probability</h2>
+          <p>
+            Statistics helps surveyors summarise repeated observations and judge their consistency. Probability helps surveyors
+            reason about uncertainty, error occurrence, tolerance limits and expected behaviour of survey measurements.
+          </p>
+
+          <div class="definition-panel">
+            <h3>Key survey idea</h3>
+            <p>
+              No field observation is perfectly exact. A measured distance, bearing or level is affected by instrument limitations,
+              environmental conditions, observer judgement and random variation. Statistical methods provide a disciplined way to
+              summarise and evaluate these observations.
+            </p>
+          </div>
+
+          <div class="table-wrap">
+            <table class="notes-table">
+              <thead>
+                <tr>
+                  <th>Survey Situation</th>
+                  <th>Mathematical Tool</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Repeated distance measurements</td>
+                  <td>Mean and standard deviation</td>
+                  <td>Estimate best value and consistency</td>
+                </tr>
+                <tr>
+                  <td>Levelling readings from different setups</td>
+                  <td>Grouped / ungrouped data</td>
+                  <td>Organise and compare observations</td>
+                </tr>
+                <tr>
+                  <td>Readings outside tolerance</td>
+                  <td>Probability</td>
+                  <td>Estimate likelihood of unacceptable readings</td>
+                </tr>
+                <tr>
+                  <td>Counting rare blunders per survey job</td>
+                  <td>Poisson distribution</td>
+                  <td>Model rare event counts</td>
+                </tr>
+                <tr>
+                  <td>Measurement errors around a mean</td>
+                  <td>Normal distribution</td>
+                  <td>Model random errors and confidence behaviour</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="mean">
+          <span class="note-tag">1.1.1 Mean</span>
+          <h3>Mean of Survey Observations</h3>
+          <p>
+            The mean is the arithmetic average. In land survey, repeated readings are often averaged to reduce the effect of random error.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Ungrouped Mean</h3>
+            <div class="formula-box">\[\bar{x}=\frac{\sum x}{n}\]</div>
+            <p>Where $\bar{x}$ is the mean, $\sum x$ is the sum of observations and $n$ is the number of observations.</p>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 1: Mean Distance</h3>
+            <p>A survey line is measured four times as $125.42\text{ m}$, $125.39\text{ m}$, $125.44\text{ m}$ and $125.41\text{ m}$. Find the mean distance.</p>
+            <ol class="solution-steps">
+              <li>Formula: \[\bar{x}=\frac{\sum x}{n}\]</li>
+              <li>Substitute: \[\bar{x}=\frac{125.42+125.39+125.44+125.41}{4}\]</li>
+              <li>\[\bar{x}=\frac{501.66}{4}=125.415\text{ m}\]</li>
+              <li><strong>Answer:</strong> The mean distance is $125.415\text{ m}$, approximately $125.42\text{ m}$ to two decimal places.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 2: Mean Level Reading</h3>
+            <p>Staff readings on a benchmark are $1.246\text{ m}$, $1.249\text{ m}$, $1.245\text{ m}$ and $1.248\text{ m}$. Find the mean reading.</p>
+            <ol class="solution-steps">
+              <li>\[\bar{x}=\frac{1.246+1.249+1.245+1.248}{4}\]</li>
+              <li>\[\bar{x}=\frac{4.988}{4}=1.247\text{ m}\]</li>
+              <li><strong>Survey interpretation:</strong> The best representative staff reading is $1.247\text{ m}$.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="median">
+          <span class="note-tag">1.1.2 Median</span>
+          <h3>Median</h3>
+          <p>
+            The median is the middle value when observations are arranged in order. It is less affected by extreme values than the mean.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Median Position</h3>
+            <div class="formula-list">
+              <div class="formula-box">For odd $n$: \[\text{Median}=\left(\frac{n+1}{2}\right)^{\text{th}}\text{ value}\]</div>
+              <div class="formula-box">For even $n$: \[\text{Median}=\frac{\left(\frac{n}{2}\right)^{\text{th}}+\left(\frac{n}{2}+1\right)^{\text{th}}}{2}\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 3: Median of Angular Readings</h3>
+            <p>Repeated angular readings in degrees are $64.22$, $64.18$, $64.25$, $64.20$, $64.21$. Find the median.</p>
+            <ol class="solution-steps">
+              <li>Arrange in ascending order: \[64.18,\ 64.20,\ 64.21,\ 64.22,\ 64.25\]</li>
+              <li>There are five observations, so the median is the third value.</li>
+              <li><strong>Answer:</strong> Median angle $=64.21^\circ$.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 4: Median with Even Number of Observations</h3>
+            <p>Measured offsets are $2.4\text{ m}$, $2.8\text{ m}$, $2.6\text{ m}$ and $3.0\text{ m}$. Find the median.</p>
+            <ol class="solution-steps">
+              <li>Arrange: \[2.4,\ 2.6,\ 2.8,\ 3.0\]</li>
+              <li>Middle two values are $2.6$ and $2.8$.</li>
+              <li>\[\text{Median}=\frac{2.6+2.8}{2}=2.7\text{ m}\]</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="mode">
+          <span class="note-tag">1.1.3 Mode</span>
+          <h3>Mode</h3>
+          <p>
+            The mode is the most frequently occurring value. It can indicate the most common reading, error class, defect count or equipment response.
+          </p>
+
+          <div class="definition-panel">
+            <h3>Important note</h3>
+            <p>
+              A data set may have one mode, more than one mode or no mode. In continuous survey measurements, exact repeated values may be rare,
+              so modal class is often more useful than exact mode.
+            </p>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 5: Mode of Repeated Readings</h3>
+            <p>Staff readings are $1.235$, $1.236$, $1.235$, $1.237$, $1.235$, $1.236$. Find the mode.</p>
+            <ol class="solution-steps">
+              <li>$1.235$ occurs three times.</li>
+              <li>$1.236$ occurs two times.</li>
+              <li>$1.237$ occurs once.</li>
+              <li><strong>Answer:</strong> Mode $=1.235\text{ m}$.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="std-dev">
+          <span class="note-tag">1.1.4 Standard Deviation</span>
+          <h3>Standard Deviation</h3>
+          <p>
+            Standard deviation measures how spread out the observations are from the mean. A small standard deviation suggests consistent observations;
+            a large standard deviation suggests poor precision or possible blunders.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Standard Deviation Formulae</h3>
+            <div class="formula-list">
+              <div class="formula-box">Population standard deviation: \[\sigma=\sqrt{\frac{\sum(x-\mu)^2}{N}}\]</div>
+              <div class="formula-box">Sample standard deviation: \[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div>
+              <div class="formula-box">Variance: \[s^2=\frac{\sum(x-\bar{x})^2}{n-1}\]</div>
+              <div class="formula-box">Standard error of mean: \[SE=\frac{s}{\sqrt{n}}\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 6: Sample Standard Deviation of Distance Readings</h3>
+            <p>Distance readings are $50.02\text{ m}$, $50.04\text{ m}$, $50.01\text{ m}$ and $50.03\text{ m}$. Find the sample standard deviation.</p>
+            <ol class="solution-steps">
+              <li>Mean: \[\bar{x}=\frac{50.02+50.04+50.01+50.03}{4}=50.025\text{ m}\]</li>
+              <li>Deviations: \[-0.005,\ 0.015,\ -0.015,\ 0.005\]</li>
+              <li>Squares: \[0.000025,\ 0.000225,\ 0.000225,\ 0.000025\]</li>
+              <li>Sum of squares: \[\sum(x-\bar{x})^2=0.0005\]</li>
+              <li>\[s=\sqrt{\frac{0.0005}{4-1}}=\sqrt{0.0001667}=0.0129\text{ m}\]</li>
+              <li><strong>Answer:</strong> Standard deviation $\approx0.013\text{ m}$.</li>
+            </ol>
+          </div>
+
+          <div class="warning-panel">
+            <h3>Survey interpretation</h3>
+            <p>
+              The mean gives the central value, but standard deviation tells whether the observations are reliable. Two data sets can have the same mean
+              but very different consistency.
+            </p>
+          </div>
+        </section>
+
+        <section class="subtopic-card page-break" id="grouped-data">
+          <span class="note-tag">1.2 Grouped and ungrouped data</span>
+          <h3>Grouped and Ungrouped Data</h3>
+          <p>
+            Ungrouped data consists of raw individual observations. Grouped data is organised into classes. Grouping is useful when many observations
+            are collected, such as staff readings, offsets, chainage errors or repeated coordinate residuals.
+          </p>
+
+          <div class="two-col">
+            <div class="mini-card">
+              <h3>Ungrouped data</h3>
+              <p>Example: repeated staff readings</p>
+              <p>\[1.245,\ 1.247,\ 1.246,\ 1.250,\ 1.248\]</p>
+            </div>
+            <div class="mini-card">
+              <h3>Grouped data</h3>
+              <p>Example: distance error classes</p>
+              <p>\[0-5\text{ mm},\ 6-10\text{ mm},\ 11-15\text{ mm}\]</p>
+            </div>
+          </div>
+
+          <div class="formula-panel">
+            <h3>Grouped Mean</h3>
+            <div class="formula-box">\[\bar{x}=\frac{\sum fx}{\sum f}\]</div>
+            <p>Where $f$ is frequency and $x$ is the class midpoint.</p>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 7: Grouped Mean of Residual Errors</h3>
+            <p>The table shows residual error classes from a survey adjustment.</p>
+            <div class="table-wrap">
+              <table class="notes-table">
+                <thead>
+                  <tr>
+                    <th>Error Class (mm)</th>
+                    <th>Frequency $f$</th>
+                    <th>Midpoint $x$</th>
+                    <th>$fx$</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>0 - 4</td><td>3</td><td>2</td><td>6</td></tr>
+                  <tr><td>5 - 9</td><td>5</td><td>7</td><td>35</td></tr>
+                  <tr><td>10 - 14</td><td>4</td><td>12</td><td>48</td></tr>
+                  <tr><td>15 - 19</td><td>2</td><td>17</td><td>34</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <ol class="solution-steps">
+              <li>\[\sum f=3+5+4+2=14\]</li>
+              <li>\[\sum fx=6+35+48+34=123\]</li>
+              <li>\[\bar{x}=\frac{123}{14}=8.79\text{ mm}\]</li>
+              <li><strong>Answer:</strong> The estimated mean residual error is $8.79\text{ mm}$.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="probability">
+          <span class="note-tag">1.3 Probability</span>
+          <h3>Probability Concepts for Survey Decisions</h3>
+          <p>
+            Probability measures likelihood. In surveying, probability supports reasoning about repeated observations, tolerance failure,
+            occurrence of blunders and uncertainty of measured values.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Basic Probability Formulae</h3>
+            <div class="formula-list">
+              <div class="formula-box">\[P(A)=\frac{n(A)}{n(S)}\]</div>
+              <div class="formula-box">\[0\leq P(A)\leq1\]</div>
+              <div class="formula-box">\[P(A')=1-P(A)\]</div>
+              <div class="formula-box">\[P(A\cup B)=P(A)+P(B)-P(A\cap B)\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 8: Probability of Out-of-Tolerance Reading</h3>
+            <p>In 40 repeated readings, 6 are outside tolerance. Find the probability that a randomly selected reading is outside tolerance.</p>
+            <ol class="solution-steps">
+              <li>\[P(A)=\frac{n(A)}{n(S)}\]</li>
+              <li>\[P(\text{outside tolerance})=\frac{6}{40}=0.15\]</li>
+              <li><strong>Answer:</strong> Probability $=0.15$ or $15\%$.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="binomial">
+          <span class="note-tag">1.3.1 Binomial distribution</span>
+          <h3>Binomial Distribution</h3>
+          <p>
+            The binomial distribution applies where there is a fixed number of independent trials, each trial has two outcomes,
+            and the probability of success remains constant.
+          </p>
+
+          <div class="definition-panel">
+            <h3>Survey use case</h3>
+            <p>
+              A reading may be classified as either within tolerance or outside tolerance. If the probability of an out-of-tolerance reading is known,
+              the binomial distribution can estimate the probability of getting a certain number of unacceptable readings in a fixed sample.
+            </p>
+          </div>
+
+          <div class="formula-panel">
+            <h3>Binomial Probability</h3>
+            <div class="formula-box">\[P(X=x)=\binom{n}{x}p^xq^{n-x}\]</div>
+            <div class="formula-list">
+              <div class="formula-box">\[q=1-p\]</div>
+              <div class="formula-box">\[\binom{n}{x}=\frac{n!}{x!(n-x)!}\]</div>
+              <div class="formula-box">Mean: \[\mu=np\]</div>
+              <div class="formula-box">Variance: \[\sigma^2=npq\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 9: Binomial Survey Tolerance Problem</h3>
+            <p>The probability that a distance reading is outside tolerance is $0.10$. In 5 readings, find the probability that exactly 1 reading is outside tolerance.</p>
+            <ol class="solution-steps">
+              <li>Here $n=5$, $x=1$, $p=0.10$, $q=0.90$.</li>
+              <li>\[P(X=1)=\binom{5}{1}(0.10)^1(0.90)^4\]</li>
+              <li>\[P(X=1)=5(0.10)(0.6561)=0.32805\]</li>
+              <li><strong>Answer:</strong> Probability $=0.3281$ or $32.81\%$.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 10: At Least One Unacceptable Reading</h3>
+            <p>If $p=0.05$ for an unacceptable staff reading, find the probability of at least one unacceptable reading in 4 readings.</p>
+            <ol class="solution-steps">
+              <li>Use complement: \[P(X\geq1)=1-P(X=0)\]</li>
+              <li>\[P(X=0)=\binom{4}{0}(0.05)^0(0.95)^4\]</li>
+              <li>\[P(X=0)=0.8145\]</li>
+              <li>\[P(X\geq1)=1-0.8145=0.1855\]</li>
+              <li><strong>Answer:</strong> Probability $=18.55\%$.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card page-break" id="poisson">
+          <span class="note-tag">1.3.2 Poisson distribution</span>
+          <h3>Poisson Distribution</h3>
+          <p>
+            The Poisson distribution models the number of times an event occurs in a fixed interval of time, area, length or survey job
+            when the event is relatively rare and occurs independently.
+          </p>
+
+          <div class="definition-panel">
+            <h3>Survey use case</h3>
+            <p>
+              Poisson distribution can model rare blunders per traverse, instrument faults per month, missing survey marks per route section,
+              or number of readings exceeding tolerance in a fixed observation period.
+            </p>
+          </div>
+
+          <div class="formula-panel">
+            <h3>Poisson Probability</h3>
+            <div class="formula-box">\[P(X=x)=\frac{e^{-\lambda}\lambda^x}{x!}\]</div>
+            <div class="formula-list">
+              <div class="formula-box">Mean: \[\mu=\lambda\]</div>
+              <div class="formula-box">Variance: \[\sigma^2=\lambda\]</div>
+              <div class="formula-box">Standard deviation: \[\sigma=\sqrt{\lambda}\]</div>
+              <div class="formula-box">\[e\approx2.71828\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 11: Rare Blunders in a Survey Job</h3>
+            <p>A survey team records an average of $2$ blunders per large survey job. Find the probability of exactly $3$ blunders in one job.</p>
+            <ol class="solution-steps">
+              <li>Here $\lambda=2$ and $x=3$.</li>
+              <li>\[P(X=3)=\frac{e^{-2}2^3}{3!}\]</li>
+              <li>\[P(X=3)=\frac{0.1353\times8}{6}=0.1804\]</li>
+              <li><strong>Answer:</strong> Probability $\approx0.1804$ or $18.04\%$.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 12: Probability of No Instrument Fault</h3>
+            <p>An instrument develops on average $0.5$ faults per month. Find the probability of no fault in a month.</p>
+            <ol class="solution-steps">
+              <li>Here $\lambda=0.5$ and $x=0$.</li>
+              <li>\[P(X=0)=\frac{e^{-0.5}(0.5)^0}{0!}\]</li>
+              <li>\[P(X=0)=e^{-0.5}=0.6065\]</li>
+              <li><strong>Answer:</strong> Probability $\approx60.65\%$.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="normal">
+          <span class="note-tag">1.3.3 Normal distribution</span>
+          <h3>Normal Distribution</h3>
+          <p>
+            The normal distribution is a continuous bell-shaped distribution. Many random measurement errors are approximately normal
+            because they arise from many small independent influences.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Normal Distribution</h3>
+            <div class="formula-box">\[X\sim N(\mu,\sigma^2)\]</div>
+            <div class="formula-list">
+              <div class="formula-box">Standard score: \[z=\frac{x-\mu}{\sigma}\]</div>
+              <div class="formula-box">Standard normal: \[Z\sim N(0,1)\]</div>
+              <div class="formula-box">Approx. rule: \[68\%\text{ within }1\sigma\]</div>
+              <div class="formula-box">Approx. rule: \[95\%\text{ within }2\sigma\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 13: Standard Score of a Distance Error</h3>
+            <p>Distance errors are normally distributed with mean $0\text{ mm}$ and standard deviation $5\text{ mm}$. Find the z-score for an error of $8\text{ mm}$.</p>
+            <ol class="solution-steps">
+              <li>Formula: \[z=\frac{x-\mu}{\sigma}\]</li>
+              <li>Substitute: \[z=\frac{8-0}{5}=1.6\]</li>
+              <li><strong>Answer:</strong> The error is $1.6$ standard deviations above the mean.</li>
+            </ol>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 14: Interpreting the 95% Rule</h3>
+            <p>Repeated levelling errors have mean $0\text{ mm}$ and standard deviation $3\text{ mm}$. Estimate the range containing about $95\%$ of errors.</p>
+            <ol class="solution-steps">
+              <li>About $95\%$ of values lie within $2\sigma$ of the mean.</li>
+              <li>\[2\sigma=2(3)=6\text{ mm}\]</li>
+              <li>Range: \[0\pm6\text{ mm}\]</li>
+              <li><strong>Answer:</strong> About $95\%$ of errors lie between $-6\text{ mm}$ and $+6\text{ mm}$.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="note-card page-break" id="vectors">
+          <span class="note-tag">Learning Outcome 2</span>
+          <h2>2. Apply Vector Theory</h2>
+          <p>
+            Vector theory is central to land survey because position, displacement, bearing, force direction, slope direction and coordinate changes
+            all have magnitude and direction. Vectors also support coordinate geometry, traversing and spatial modelling.
+          </p>
+        </section>
+
+        <section class="subtopic-card" id="scalar-vector">
+          <span class="note-tag">2.1 Vectors and scalar quantities</span>
+          <h3>Scalars and Vectors</h3>
+          <p>
+            A scalar has magnitude only. A vector has both magnitude and direction.
+          </p>
+
+          <div class="table-wrap">
+            <table class="notes-table">
+              <thead>
+                <tr>
+                  <th>Quantity Type</th>
+                  <th>Meaning</th>
+                  <th>Survey Examples</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Scalar</td>
+                  <td>Magnitude only</td>
+                  <td>Distance, area, volume, temperature, time, mass</td>
+                </tr>
+                <tr>
+                  <td>Vector</td>
+                  <td>Magnitude and direction</td>
+                  <td>Displacement, velocity, force, coordinate shift, direction of gradient</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="formula-panel">
+            <h3>Vector Representation</h3>
+            <div class="formula-list">
+              <div class="formula-box">2D vector: \[\mathbf{a}=a_x\mathbf{i}+a_y\mathbf{j}\]</div>
+              <div class="formula-box">3D vector: \[\mathbf{a}=a_x\mathbf{i}+a_y\mathbf{j}+a_z\mathbf{k}\]</div>
+              <div class="formula-box">Magnitude in 2D: \[|\mathbf{a}|=\sqrt{a_x^2+a_y^2}\]</div>
+              <div class="formula-box">Magnitude in 3D: \[|\mathbf{a}|=\sqrt{a_x^2+a_y^2+a_z^2}\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 15: Magnitude of a Coordinate Displacement</h3>
+            <p>A point moves from $A(100,200)$ to $B(106,208)$. Find the displacement vector and its magnitude.</p>
+            <ol class="solution-steps">
+              <li>Displacement vector: \[\mathbf{AB}=(106-100)\mathbf{i}+(208-200)\mathbf{j}\]</li>
+              <li>\[\mathbf{AB}=6\mathbf{i}+8\mathbf{j}\]</li>
+              <li>Magnitude: \[|\mathbf{AB}|=\sqrt{6^2+8^2}=\sqrt{100}=10\]</li>
+              <li><strong>Answer:</strong> The displacement is $6\mathbf{i}+8\mathbf{j}$ and the distance is $10\text{ units}$.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="subtopic-card" id="vector-algebra">
+          <span class="note-tag">2.2 Vector algebra</span>
+          <h3>Vector Algebra</h3>
+          <p>
+            Vector algebra involves addition, subtraction and scalar multiplication. It is used to combine coordinate shifts,
+            resolve traverse components and represent movement from one station to another.
+          </p>
+
+          <div class="formula-panel">
+            <h3>Vector Operations</h3>
+            <div class="formula-list">
+              <div class="formula-box">Addition: \[\mathbf{a}+\mathbf{b}=(a_x+b_x)\mathbf{i}+(a_y+b_y)\mathbf{j}\]</div>
+              <div class="formula-box">Subtraction: \[\mathbf{a}-\mathbf{b}=(a_x-b_x)\mathbf{i}+(a_y-b_y)\mathbf{j}\]</div>
+              <div class="formula-box">Scalar multiplication: \[k\mathbf{a}=ka_x\mathbf{i}+ka_y\mathbf{j}\]</div>
+              <div class="formula-box">Unit vector: \[\hat{\mathbf{a}}=\frac{\mathbf{a}}{|\mathbf{a}|}\]</div>
+            </div>
+          </div>
+
+          <div class="worked-example">
+            <h3>Worked Example 16: Adding Traverse Component Vectors</h3>
+            <p>Two coordinate shifts are $\mathbf{a}=12\mathbf{i}+5\mathbf{j}$ and $\mathbf{b}=8\mathbf{i}-3\mathbf{j}$. Find the resultant shift.</p>
+            <ol class="solution-steps">
+              <li>\[\mathbf{a}+\mathbf{b}=(12+8)\mathbf{i}+(5-3)\mathbf{j}\]</li>
+              <li>\[\mathbf{a}+\mathbf{b}=20\mathbf{i}+2\mathbf{j}\]</li>
+              <li><strong>Answer:</strong> R
