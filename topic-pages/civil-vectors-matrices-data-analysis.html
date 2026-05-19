@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Vectors, Matrices and Engineering Data Analysis | Mr Mwirigi Mathematics Training Hub</title><link rel="stylesheet" href="../css/style.css"/>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vectors, Matrices and Data Analysis | Mr Mwirigi Mathematics Training Hub</title>
+<link rel="stylesheet" href="../css/style.css"/>
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head><body>
 <header class="site-header"><div class="container nav-wrap">
 <a class="brand" href="../index.html"><span class="brand-mark">∑</span><span>Mr Mwirigi Mathematics Training Hub</span></a>
 <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
@@ -10,180 +12,119 @@
 <a href="index.html">Home</a><a href="../civil.html">Civil</a><a href="../building.html">Building</a><a href="../land-survey.html">Land Survey</a><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../references.html">References</a><a href="../contact.html">Contact</a>
 </nav></div></header>
 <main>
-<section class="page-hero"><div class="container"><p class="eyebrow">Civil Engineering</p><h1>Vectors, Matrices and Engineering Data Analysis</h1><p>Vector components, matrix operations, simultaneous equations and statistical interpretation of engineering data.</p></div></section>
-<section class="container section">
-  <div class="cards three">
-    <article class="card"><h3>Learner Notes PDF</h3><p>Download the printable professional notes for this topic.</p><a class="btn secondary" href="../materials/civil/civil-vectors-matrices-data-analysis-notes.pdf" target="_blank">Download Notes</a></article>
-    <article class="card"><h3>Assignment</h3><p>Questions only for learner submission.</p><a class="btn secondary" href="../assignments/civil/civil-vectors-matrices-data-analysis-assignment-1.pdf" target="_blank">Download Assignment</a></article>
-    <article class="card"><h3>Revision</h3><p>Revision booklet for CAT and summative preparation.</p><a class="btn secondary" href="../revision/civil/civil-vectors-matrices-data-analysis-revision.pdf" target="_blank">Download Revision</a></article>
-  </div>
-</section>
+<section class="page-hero"><div class="container">
+<p class="eyebrow">Civil Engineering</p>
+<h1>Vectors, Matrices and Data Analysis</h1>
+<p>Vectors, matrix methods, simultaneous equations, statistics and engineering data interpretation.</p>
+</div></section>
+
 <section class="container section lesson-layout">
-  <aside class="toc-card">
-    <h3>Topic sections</h3>
-    <a href="#s1">1. Scalars and vectors</a><a href="#s2">2. Resolution of vectors</a><a href="#s3">3. Matrices</a><a href="#s4">4. Solving systems</a><a href="#s5">5. Data analysis</a>
-    <h3>Downloads</h3>
-    <a href="../materials/civil/civil-vectors-matrices-data-analysis-notes.pdf" target="_blank">Learner Notes PDF</a>
-    <a href="../assignments/civil/civil-vectors-matrices-data-analysis-assignment-1.pdf" target="_blank">Assignment PDF</a>
-    <a href="../revision/civil/civil-vectors-matrices-data-analysis-revision.pdf" target="_blank">Revision PDF</a>
-  </aside>
-  <div>
-    <section class="lesson-block">
-      <span class="note-tag">Formula summary</span>
-      <h2>Key formulas</h2>
-      <p>The formulas below are rendered using MathJax for professional mathematical display.</p>
-      <div class="formula-card"><strong>Resultant vector</strong>\[\vec{R}=\vec{A}+\vec{B}\]</div><div class="formula-card"><strong>Horizontal component</strong>\[A_x=A\cos\theta\]</div><div class="formula-card"><strong>Vertical component</strong>\[A_y=A\sin\theta\]</div><div class="formula-card"><strong>Matrix system</strong>\[AX=B\]</div><div class="formula-card"><strong>Sample standard deviation</strong>\[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div>
-      <h3>Application areas</h3>
-      <ul class="check-list"><li>forces</li><li>survey displacement</li><li>matrix equations</li><li>quality control</li><li>statistical judgement</li></ul>
-    </section>
-    
-        <section class="lesson-block" id="s1">
-          <span class="note-tag">Section 1</span>
-          <h2>Scalars and vectors</h2>
-          <p>Magnitude, direction and representation.</p>
-          <p>In civil engineering, this concept supports technical judgement in tasks such as forces. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[\vec{R}=\vec{A}+\vec{B}\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Force components</h4>
-            <p>Resolve a 12 kN force acting at 35° to the horizontal into components.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving forces.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s2">
-          <span class="note-tag">Section 2</span>
-          <h2>Resolution of vectors</h2>
-          <p>Components in horizontal and vertical directions.</p>
-          <p>In civil engineering, this concept supports technical judgement in tasks such as survey displacement. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[A_x=A\cos\theta\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Matrix equations</h4>
-            <p>Represent two material-balance equations in matrix form.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving survey displacement.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s3">
-          <span class="note-tag">Section 3</span>
-          <h2>Matrices</h2>
-          <p>Matrix notation, addition, multiplication and determinants.</p>
-          <p>In civil engineering, this concept supports technical judgement in tasks such as matrix equations. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[A_y=A\sin\theta\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Concrete test data</h4>
-            <p>Calculate the mean and standard deviation of six cube-test results.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving matrix equations.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s4">
-          <span class="note-tag">Section 4</span>
-          <h2>Solving systems</h2>
-          <p>Matrix representation of simultaneous equations.</p>
-          <p>In civil engineering, this concept supports technical judgement in tasks such as quality control. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[AX=B\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Force components</h4>
-            <p>Resolve a 12 kN force acting at 35° to the horizontal into components.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving quality control.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s5">
-          <span class="note-tag">Section 5</span>
-          <h2>Data analysis</h2>
-          <p>Mean, standard deviation, probability and quality checks.</p>
-          <p>In civil engineering, this concept supports technical judgement in tasks such as statistical judgement. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Matrix equations</h4>
-            <p>Represent two material-balance equations in matrix form.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving statistical judgement.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
+<aside class="toc-card">
+  <h3>Lesson menu</h3>
+  <a href="#s1">1. Scalars and vectors</a><a href="#s2">2. Resolution of vectors</a><a href="#s3">3. Matrices and systems</a><a href="#s4">4. Statistics for engineering data</a><a href="#s5">5. Probability and quality checks</a>
+  <hr>
+  <button class="btn secondary" onclick="printPage()">Print / Save as PDF</button>
+</aside>
+<div>
+  <section class="lesson-card">
+    <span class="note-tag">Professional learner notes</span>
+    <h2>Purpose of the topic</h2>
+    <p>This unit supports force resolution, displacement, material data analysis, matrix solving and technical decision-making from data.</p>
+    <p>These notes are written as class notes for engineering trainees. They follow the same working standard used in class: state the formula, substitute correctly, compute, attach units, and then explain what the answer means in a civil, building or survey situation.</p>
+  </section>
+  
+<section class="lesson-card" id="s1">
+  <span class="note-tag">Section 1</span>
+  <h2>Scalars and vectors</h2>
+  <p>Scalars have magnitude only; vectors have magnitude and direction. Force, displacement and velocity are vectors.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[\vec{R}=\vec{A}+\vec{B}\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>Two forces acting in the same direction add directly. If 5 kN and 7 kN act together, resultant=12 kN.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
   </div>
+  <h3>Engineering interpretation</h3>
+  <p>Vector thinking is needed in structural and survey calculations.</p>
 </section>
-<section class="container section"><div class="notice"><h2>Trainer note</h2><p>The trainer guide is stored separately in the <code>trainer/</code> folder and is not linked publicly on learner pages.</p></div></section>
+
+<section class="lesson-card" id="s2">
+  <span class="note-tag">Section 2</span>
+  <h2>Resolution of vectors</h2>
+  <p>A vector can be split into horizontal and vertical components.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[A_x=A\cos\theta\]</div>
+<div class="formula-box">\[A_y=A\sin\theta\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>A 12 kN force at 35° has Aₓ=12cos35°=9.83 kN and Aᵧ=12sin35°=6.88 kN.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Components help analyse forces in members.</p>
+</section>
+
+<section class="lesson-card" id="s3">
+  <span class="note-tag">Section 3</span>
+  <h2>Matrices and systems</h2>
+  <p>Matrices organise simultaneous equations and transformations. The system AX=B represents several equations compactly.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[AX=B\]</div>
+<div class="formula-box">\[\det(A)=ad-bc\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>Equations 2x+y=8 and x+3y=9 can be written as [[2,1],[1,3]][x,y]^T=[8,9]^T.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Matrix notation supports efficient calculation in engineering systems.</p>
+</section>
+
+<section class="lesson-card" id="s4">
+  <span class="note-tag">Section 4</span>
+  <h2>Statistics for engineering data</h2>
+  <p>Engineering measurements vary. Statistics summarise centre and spread.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[\bar{x}=\frac{\sum x}{n}\]</div>
+<div class="formula-box">\[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>Mean concrete strength is found by adding all results and dividing by the number tested.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Standard deviation shows consistency of results.</p>
+</section>
+
+<section class="lesson-card" id="s5">
+  <span class="note-tag">Section 5</span>
+  <h2>Probability and quality checks</h2>
+  <p>Probability helps estimate likelihood and support quality decisions.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[P(A)=\frac{n(A)}{n(S)}\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>If 3 out of 20 samples fail, probability of failure from the sample is 3/20=0.15.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>This supports risk and quality discussions.</p>
+</section>
+
+  <section class="exercise-box">
+    <h2>Practice exercises</h2>
+    <ol class="steps"><li>Resolve a 20 kN force at 30° into components.</li><li>Write two simultaneous equations in matrix form.</li><li>Calculate the mean of 22,25,23,24,26.</li><li>Find probability if 4 out of 25 readings are outside tolerance.</li><li>Explain why standard deviation matters in concrete testing.</li></ol>
+  </section>
+  <section class="summary-box">
+    <h2>Summary</h2>
+    <p>By the end of this topic, a competent trainee should be able to identify the correct formula, perform the calculation accurately, use correct units, and explain the result in a real engineering context.</p>
+  </section>
+</div>
+</section>
 </main>
 <footer class="site-footer"><div class="container footer-grid">
-<div><h3>Mr Mwirigi Mathematics Training Hub</h3><p>Professional engineering mathematics support for Civil Engineering, Building Technology and Land Survey trainees.</p></div>
-<div><h4>Quick Access</h4><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision Materials</a><a href="../references.html">References</a><a href="../contact.html">Contact Trainer</a></div>
-<div><h4>Learning Areas</h4><a href="../civil.html">Civil Engineering Mathematics</a><a href="../building.html">Building Technology Mathematics</a><a href="../land-survey.html">Land Survey Mathematics</a></div>
+<div><h3>Mr Mwirigi Mathematics Training Hub</h3><p>Professional engineering mathematics notes for Civil Engineering, Building Technology and Land Survey trainees.</p></div>
+<div><h4>Quick Access</h4><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../references.html">References</a><a href="../contact.html">Contact</a></div>
+<div><h4>Learning Areas</h4><a href="../civil.html">Civil Engineering</a><a href="../building.html">Building Technology</a><a href="../land-survey.html">Land Survey</a></div>
 </div><div class="copyright"><p>© 2026 Mr Mwirigi Mathematics Training Hub. All rights reserved.</p></div></footer>
 <script src="../js/main.js"></script></body></html>

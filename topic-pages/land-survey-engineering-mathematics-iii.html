@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Engineering Mathematics III for Land Survey | Mr Mwirigi Mathematics Training Hub</title><link rel="stylesheet" href="../css/style.css"/>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Engineering Mathematics III for Land Survey | Mr Mwirigi Mathematics Training Hub</title>
+<link rel="stylesheet" href="../css/style.css"/>
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head><body>
 <header class="site-header"><div class="container nav-wrap">
 <a class="brand" href="../index.html"><span class="brand-mark">∑</span><span>Mr Mwirigi Mathematics Training Hub</span></a>
 <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
@@ -10,180 +12,116 @@
 <a href="index.html">Home</a><a href="../civil.html">Civil</a><a href="../building.html">Building</a><a href="../land-survey.html">Land Survey</a><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../references.html">References</a><a href="../contact.html">Contact</a>
 </nav></div></header>
 <main>
-<section class="page-hero"><div class="container"><p class="eyebrow">Land Survey</p><h1>Engineering Mathematics III for Land Survey</h1><p>Survey statistics, probability, matrices, errors and adjustment concepts for higher-level survey mathematics.</p></div></section>
-<section class="container section">
-  <div class="cards three">
-    <article class="card"><h3>Learner Notes PDF</h3><p>Download the printable professional notes for this topic.</p><a class="btn secondary" href="../materials/land-survey/land-survey-engineering-mathematics-iii-notes.pdf" target="_blank">Download Notes</a></article>
-    <article class="card"><h3>Assignment</h3><p>Questions only for learner submission.</p><a class="btn secondary" href="../assignments/land-survey/land-survey-engineering-mathematics-iii-assignment-1.pdf" target="_blank">Download Assignment</a></article>
-    <article class="card"><h3>Revision</h3><p>Revision booklet for CAT and summative preparation.</p><a class="btn secondary" href="../revision/land-survey/land-survey-engineering-mathematics-iii-revision.pdf" target="_blank">Download Revision</a></article>
-  </div>
-</section>
+<section class="page-hero"><div class="container">
+<p class="eyebrow">Land Survey</p>
+<h1>Engineering Mathematics III for Land Survey</h1>
+<p>Statistics, probability, matrices, errors and adjustment concepts for higher land survey mathematics.</p>
+</div></section>
+
 <section class="container section lesson-layout">
-  <aside class="toc-card">
-    <h3>Topic sections</h3>
-    <a href="#s1">1. Survey data collection</a><a href="#s2">2. Central tendency</a><a href="#s3">3. Dispersion</a><a href="#s4">4. Probability</a><a href="#s5">5. Matrices and adjustment</a>
-    <h3>Downloads</h3>
-    <a href="../materials/land-survey/land-survey-engineering-mathematics-iii-notes.pdf" target="_blank">Learner Notes PDF</a>
-    <a href="../assignments/land-survey/land-survey-engineering-mathematics-iii-assignment-1.pdf" target="_blank">Assignment PDF</a>
-    <a href="../revision/land-survey/land-survey-engineering-mathematics-iii-revision.pdf" target="_blank">Revision PDF</a>
-  </aside>
-  <div>
-    <section class="lesson-block">
-      <span class="note-tag">Formula summary</span>
-      <h2>Key formulas</h2>
-      <p>The formulas below are rendered using MathJax for professional mathematical display.</p>
-      <div class="formula-card"><strong>Mean</strong>\[\bar{x}=\frac{\sum x}{n}\]</div><div class="formula-card"><strong>Standard deviation</strong>\[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div><div class="formula-card"><strong>Probability</strong>\[P(A)=\frac{n(A)}{n(S)}\]</div><div class="formula-card"><strong>Matrix system</strong>\[AX=B\]</div><div class="formula-card"><strong>Error</strong>\[e=\mathrm{observed}-\mathrm{true}\]</div>
-      <h3>Application areas</h3>
-      <ul class="check-list"><li>repeated observations</li><li>measurement errors</li><li>survey adjustment</li><li>quality checks</li><li>probability of acceptance</li></ul>
-    </section>
-    
-        <section class="lesson-block" id="s1">
-          <span class="note-tag">Section 1</span>
-          <h2>Survey data collection</h2>
-          <p>Repeated observations and data quality.</p>
-          <p>In land survey, this concept supports technical judgement in tasks such as repeated observations. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[\bar{x}=\frac{\sum x}{n}\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Repeated angles</h4>
-            <p>Calculate mean of repeated angular observations.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving repeated observations.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s2">
-          <span class="note-tag">Section 2</span>
-          <h2>Central tendency</h2>
-          <p>Mean, median and mode for observations.</p>
-          <p>In land survey, this concept supports technical judgement in tasks such as measurement errors. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Observation spread</h4>
-            <p>Calculate standard deviation of distance measurements.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving measurement errors.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s3">
-          <span class="note-tag">Section 3</span>
-          <h2>Dispersion</h2>
-          <p>Range, variance and standard deviation.</p>
-          <p>In land survey, this concept supports technical judgement in tasks such as survey adjustment. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[P(A)=\frac{n(A)}{n(S)}\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Matrix adjustment</h4>
-            <p>Represent correction equations in matrix form.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving survey adjustment.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s4">
-          <span class="note-tag">Section 4</span>
-          <h2>Probability</h2>
-          <p>Simple probability and quality decision-making.</p>
-          <p>In land survey, this concept supports technical judgement in tasks such as quality checks. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[AX=B\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Repeated angles</h4>
-            <p>Calculate mean of repeated angular observations.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving quality checks.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s5">
-          <span class="note-tag">Section 5</span>
-          <h2>Matrices and adjustment</h2>
-          <p>Linear systems and survey corrections.</p>
-          <p>In land survey, this concept supports technical judgement in tasks such as probability of acceptance. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[e=\mathrm{observed}-\mathrm{true}\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Observation spread</h4>
-            <p>Calculate standard deviation of distance measurements.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving probability of acceptance.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
+<aside class="toc-card">
+  <h3>Lesson menu</h3>
+  <a href="#s1">1. Survey data and repeated observations</a><a href="#s2">2. Dispersion and standard deviation</a><a href="#s3">3. Probability in quality decisions</a><a href="#s4">4. Matrices for survey adjustment</a><a href="#s5">5. Error interpretation</a>
+  <hr>
+  <button class="btn secondary" onclick="printPage()">Print / Save as PDF</button>
+</aside>
+<div>
+  <section class="lesson-card">
+    <span class="note-tag">Professional learner notes</span>
+    <h2>Purpose of the topic</h2>
+    <p>Engineering Mathematics III supports survey-data analysis, repeated observations, matrix correction equations and interpretation of measurement error.</p>
+    <p>These notes are written as class notes for engineering trainees. They follow the same working standard used in class: state the formula, substitute correctly, compute, attach units, and then explain what the answer means in a civil, building or survey situation.</p>
+  </section>
+  
+<section class="lesson-card" id="s1">
+  <span class="note-tag">Section 1</span>
+  <h2>Survey data and repeated observations</h2>
+  <p>Survey measurements are repeated to reduce blunders and estimate reliability.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[\bar{x}=\frac{\sum x}{n}\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>Angles 45°10′, 45°12′ and 45°11′ average to 45°11′.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
   </div>
+  <h3>Engineering interpretation</h3>
+  <p>Mean observations reduce random variation.</p>
 </section>
-<section class="container section"><div class="notice"><h2>Trainer note</h2><p>The trainer guide is stored separately in the <code>trainer/</code> folder and is not linked publicly on learner pages.</p></div></section>
+
+<section class="lesson-card" id="s2">
+  <span class="note-tag">Section 2</span>
+  <h2>Dispersion and standard deviation</h2>
+  <p>Dispersion shows how spread out observations are.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>Small standard deviation means observations are consistent.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Used to judge reliability of repeated readings.</p>
+</section>
+
+<section class="lesson-card" id="s3">
+  <span class="note-tag">Section 3</span>
+  <h2>Probability in quality decisions</h2>
+  <p>Probability estimates likelihood of acceptable or unacceptable observations.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[P(A)=\frac{n(A)}{n(S)}\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>If 2 out of 20 readings are outside tolerance, sample probability=0.10.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Supports quality-control judgement.</p>
+</section>
+
+<section class="lesson-card" id="s4">
+  <span class="note-tag">Section 4</span>
+  <h2>Matrices for survey adjustment</h2>
+  <p>Adjustment equations can be organised in matrix form.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[AX=B\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>Correction equations for unknowns can be arranged in a coefficient matrix.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Matrix methods support traverse and network adjustment.</p>
+</section>
+
+<section class="lesson-card" id="s5">
+  <span class="note-tag">Section 5</span>
+  <h2>Error interpretation</h2>
+  <p>Error is difference between observed and accepted value.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[e=\mathrm{observed}-\mathrm{true}\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>If observed distance is 100.026 m and accepted value is 100.000 m, error=0.026 m.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Understanding error is central to survey accuracy.</p>
+</section>
+
+  <section class="exercise-box">
+    <h2>Practice exercises</h2>
+    <ol class="steps"><li>Find mean of 5 repeated distance observations.</li><li>Explain random and systematic error.</li><li>Find probability if 3 of 30 readings are outside tolerance.</li><li>Write two correction equations as AX=B.</li><li>Calculate error for observed 75.014 m and accepted 75.000 m.</li></ol>
+  </section>
+  <section class="summary-box">
+    <h2>Summary</h2>
+    <p>By the end of this topic, a competent trainee should be able to identify the correct formula, perform the calculation accurately, use correct units, and explain the result in a real engineering context.</p>
+  </section>
+</div>
+</section>
 </main>
 <footer class="site-footer"><div class="container footer-grid">
-<div><h3>Mr Mwirigi Mathematics Training Hub</h3><p>Professional engineering mathematics support for Civil Engineering, Building Technology and Land Survey trainees.</p></div>
-<div><h4>Quick Access</h4><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision Materials</a><a href="../references.html">References</a><a href="../contact.html">Contact Trainer</a></div>
-<div><h4>Learning Areas</h4><a href="../civil.html">Civil Engineering Mathematics</a><a href="../building.html">Building Technology Mathematics</a><a href="../land-survey.html">Land Survey Mathematics</a></div>
+<div><h3>Mr Mwirigi Mathematics Training Hub</h3><p>Professional engineering mathematics notes for Civil Engineering, Building Technology and Land Survey trainees.</p></div>
+<div><h4>Quick Access</h4><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../references.html">References</a><a href="../contact.html">Contact</a></div>
+<div><h4>Learning Areas</h4><a href="../civil.html">Civil Engineering</a><a href="../building.html">Building Technology</a><a href="../land-survey.html">Land Survey</a></div>
 </div><div class="copyright"><p>© 2026 Mr Mwirigi Mathematics Training Hub. All rights reserved.</p></div></footer>
 <script src="../js/main.js"></script></body></html>

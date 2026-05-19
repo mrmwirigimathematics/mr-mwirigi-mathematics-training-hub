@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Engineering Mathematics II for Land Survey | Mr Mwirigi Mathematics Training Hub</title><link rel="stylesheet" href="../css/style.css"/>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Engineering Mathematics II for Land Survey | Mr Mwirigi Mathematics Training Hub</title>
+<link rel="stylesheet" href="../css/style.css"/>
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head><body>
 <header class="site-header"><div class="container nav-wrap">
 <a class="brand" href="../index.html"><span class="brand-mark">∑</span><span>Mr Mwirigi Mathematics Training Hub</span></a>
 <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
@@ -10,180 +12,118 @@
 <a href="index.html">Home</a><a href="../civil.html">Civil</a><a href="../building.html">Building</a><a href="../land-survey.html">Land Survey</a><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../references.html">References</a><a href="../contact.html">Contact</a>
 </nav></div></header>
 <main>
-<section class="page-hero"><div class="container"><p class="eyebrow">Land Survey</p><h1>Engineering Mathematics II for Land Survey</h1><p>Coordinate geometry, whole-circle bearings, gradients, latitudes, departures and area from coordinates.</p></div></section>
-<section class="container section">
-  <div class="cards three">
-    <article class="card"><h3>Learner Notes PDF</h3><p>Download the printable professional notes for this topic.</p><a class="btn secondary" href="../materials/land-survey/land-survey-engineering-mathematics-ii-notes.pdf" target="_blank">Download Notes</a></article>
-    <article class="card"><h3>Assignment</h3><p>Questions only for learner submission.</p><a class="btn secondary" href="../assignments/land-survey/land-survey-engineering-mathematics-ii-assignment-1.pdf" target="_blank">Download Assignment</a></article>
-    <article class="card"><h3>Revision</h3><p>Revision booklet for CAT and summative preparation.</p><a class="btn secondary" href="../revision/land-survey/land-survey-engineering-mathematics-ii-revision.pdf" target="_blank">Download Revision</a></article>
-  </div>
-</section>
+<section class="page-hero"><div class="container">
+<p class="eyebrow">Land Survey</p>
+<h1>Engineering Mathematics II for Land Survey</h1>
+<p>Coordinate geometry, bearings, gradients, latitudes, departures and area from coordinates.</p>
+</div></section>
+
 <section class="container section lesson-layout">
-  <aside class="toc-card">
-    <h3>Topic sections</h3>
-    <a href="#s1">1. Coordinate geometry</a><a href="#s2">2. Whole-circle bearings</a><a href="#s3">3. Latitudes and departures</a><a href="#s4">4. Gradients and slopes</a><a href="#s5">5. Area from coordinates</a>
-    <h3>Downloads</h3>
-    <a href="../materials/land-survey/land-survey-engineering-mathematics-ii-notes.pdf" target="_blank">Learner Notes PDF</a>
-    <a href="../assignments/land-survey/land-survey-engineering-mathematics-ii-assignment-1.pdf" target="_blank">Assignment PDF</a>
-    <a href="../revision/land-survey/land-survey-engineering-mathematics-ii-revision.pdf" target="_blank">Revision PDF</a>
-  </aside>
-  <div>
-    <section class="lesson-block">
-      <span class="note-tag">Formula summary</span>
-      <h2>Key formulas</h2>
-      <p>The formulas below are rendered using MathJax for professional mathematical display.</p>
-      <div class="formula-card"><strong>Gradient</strong>\[\mathrm{Gradient}=\frac{\mathrm{Rise}}{\mathrm{Run}}\]</div><div class="formula-card"><strong>Departure</strong>\[\Delta E=L\sin\theta\]</div><div class="formula-card"><strong>Latitude</strong>\[\Delta N=L\cos\theta\]</div><div class="formula-card"><strong>Coordinate area</strong>\[A=\frac{1}{2}\left|\sum x_iy_{i+1}-\sum y_ix_{i+1}\right|\]</div><div class="formula-card"><strong>Distance</strong>\[d=\sqrt{(\Delta E)^2+(\Delta N)^2}\]</div>
-      <h3>Application areas</h3>
-      <ul class="check-list"><li>levelling</li><li>traverse computation</li><li>control lines</li><li>area by coordinates</li><li>survey closures</li></ul>
-    </section>
-    
-        <section class="lesson-block" id="s1">
-          <span class="note-tag">Section 1</span>
-          <h2>Coordinate geometry</h2>
-          <p>Distance, gradient and line equations.</p>
-          <p>In land survey, this concept supports technical judgement in tasks such as levelling. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[\mathrm{Gradient}=\frac{\mathrm{Rise}}{\mathrm{Run}}\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Traverse component</h4>
-            <p>Find latitude and departure for a 100 m line at bearing 35°.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving levelling.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s2">
-          <span class="note-tag">Section 2</span>
-          <h2>Whole-circle bearings</h2>
-          <p>Direction measurement and quadrant interpretation.</p>
-          <p>In land survey, this concept supports technical judgement in tasks such as traverse computation. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[\Delta E=L\sin\theta\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Gradient</h4>
-            <p>Find gradient when level rises 1.5 m over 60 m horizontal distance.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving traverse computation.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s3">
-          <span class="note-tag">Section 3</span>
-          <h2>Latitudes and departures</h2>
-          <p>North-south and east-west components.</p>
-          <p>In land survey, this concept supports technical judgement in tasks such as control lines. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[\Delta N=L\cos\theta\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Area</h4>
-            <p>Use coordinate method to find area of a small parcel.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving control lines.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s4">
-          <span class="note-tag">Section 4</span>
-          <h2>Gradients and slopes</h2>
-          <p>Rise, run and percentage gradient.</p>
-          <p>In land survey, this concept supports technical judgement in tasks such as area by coordinates. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[A=\frac{1}{2}\left|\sum x_iy_{i+1}-\sum y_ix_{i+1}\right|\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Traverse component</h4>
-            <p>Find latitude and departure for a 100 m line at bearing 35°.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving area by coordinates.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
-        <section class="lesson-block" id="s5">
-          <span class="note-tag">Section 5</span>
-          <h2>Area from coordinates</h2>
-          <p>Coordinate area method and plotting checks.</p>
-          <p>In land survey, this concept supports technical judgement in tasks such as survey closures. The learner must connect the numerical answer to site, drawing, survey, measurement, or data decisions.</p>
-          <h3>Core formula</h3>
-          <div class="formula-card">\[d=\sqrt{(\Delta E)^2+(\Delta N)^2}\]</div>
-          <h3>Worked method</h3>
-          <div class="example-card">
-            <h4>Gradient</h4>
-            <p>Find gradient when level rises 1.5 m over 60 m horizontal distance.</p>
-            <p><strong>Method:</strong> identify the given values, write the correct formula, substitute carefully, simplify, attach units, and interpret the result.</p>
-          </div>
-          <h3>Common errors</h3>
-          <ul class="check-list">
-            <li>Using a formula before checking what each symbol means.</li>
-            <li>Mixing units such as mm, cm and m.</li>
-            <li>Rounding too early.</li>
-            <li>Giving a final number without technical interpretation.</li>
-          </ul>
-          <h3>Practice</h3>
-          <ol class="exercise-list">
-            <li>Create and solve one original problem involving survey closures.</li>
-            <li>Explain the formula used and define every symbol.</li>
-            <li>State the answer with units and one technical interpretation.</li>
-          </ol>
-        </section>
-        
+<aside class="toc-card">
+  <h3>Lesson menu</h3>
+  <a href="#s1">1. Coordinate geometry</a><a href="#s2">2. Whole-circle bearings</a><a href="#s3">3. Latitudes and departures</a><a href="#s4">4. Gradients and slopes</a><a href="#s5">5. Area from coordinates</a>
+  <hr>
+  <button class="btn secondary" onclick="printPage()">Print / Save as PDF</button>
+</aside>
+<div>
+  <section class="lesson-card">
+    <span class="note-tag">Professional learner notes</span>
+    <h2>Purpose of the topic</h2>
+    <p>Engineering Mathematics II develops the coordinate and traverse computations used in land survey work.</p>
+    <p>These notes are written as class notes for engineering trainees. They follow the same working standard used in class: state the formula, substitute correctly, compute, attach units, and then explain what the answer means in a civil, building or survey situation.</p>
+  </section>
+  
+<section class="lesson-card" id="s1">
+  <span class="note-tag">Section 1</span>
+  <h2>Coordinate geometry</h2>
+  <p>Coordinates allow distances, gradients and line equations to be calculated.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[d=\sqrt{(\Delta E)^2+(\Delta N)^2}\]</div>
+<div class="formula-box">\[m=\frac{\Delta N}{\Delta E}\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>If ΔE=40 and ΔN=30, distance=50 m and slope relative to east is 30/40=0.75.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
   </div>
+  <h3>Engineering interpretation</h3>
+  <p>Used in plotting and checking control lines.</p>
 </section>
-<section class="container section"><div class="notice"><h2>Trainer note</h2><p>The trainer guide is stored separately in the <code>trainer/</code> folder and is not linked publicly on learner pages.</p></div></section>
+
+<section class="lesson-card" id="s2">
+  <span class="note-tag">Section 2</span>
+  <h2>Whole-circle bearings</h2>
+  <p>Whole-circle bearings are measured clockwise from north from 0° to 360°.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[\theta=\tan^{-1}\left(\frac{|\Delta E|}{|\Delta N|}\right)\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>Quadrant corrections depend on signs of ΔE and ΔN.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Essential for correct traverse direction.</p>
+</section>
+
+<section class="lesson-card" id="s3">
+  <span class="note-tag">Section 3</span>
+  <h2>Latitudes and departures</h2>
+  <p>Latitude is north-south component; departure is east-west component.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[\Delta E=L\sin\theta\]</div>
+<div class="formula-box">\[\Delta N=L\cos\theta\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>For L=100 m and θ=35°, ΔE=57.36 m and ΔN=81.92 m.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Used in traverse computation.</p>
+</section>
+
+<section class="lesson-card" id="s4">
+  <span class="note-tag">Section 4</span>
+  <h2>Gradients and slopes</h2>
+  <p>Gradient compares rise to horizontal run.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[\mathrm{Gradient}=\frac{\mathrm{Rise}}{\mathrm{Run}}\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>Rise 1.5 m over 60 m gives gradient=1/40 or 2.5%.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Used in levelling and engineering survey.</p>
+</section>
+
+<section class="lesson-card" id="s5">
+  <span class="note-tag">Section 5</span>
+  <h2>Area from coordinates</h2>
+  <p>Coordinate area uses ordered boundary coordinates.</p>
+  <h3>Key formulae</h3>
+  <div class="formula-box">\[A=\frac12\left|\sum x_iy_{i+1}-\sum y_ix_{i+1}\right|\]</div>
+  <div class="example-box">
+    <h3>Worked example</h3>
+    <p>Tabulate coordinates clockwise, multiply cross-products and take half the absolute difference.</p>
+    <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
+  </div>
+  <h3>Engineering interpretation</h3>
+  <p>Used in parcel-area computation.</p>
+</section>
+
+  <section class="exercise-box">
+    <h2>Practice exercises</h2>
+    <ol class="steps"><li>Compute latitude and departure for L=80 m, bearing 40°.</li><li>Find gradient for rise 2 m over 100 m.</li><li>Explain whole-circle bearing correction in quadrant III.</li><li>Find distance from ΔE=24, ΔN=32.</li><li>Set up a coordinate-area table for four points.</li></ol>
+  </section>
+  <section class="summary-box">
+    <h2>Summary</h2>
+    <p>By the end of this topic, a competent trainee should be able to identify the correct formula, perform the calculation accurately, use correct units, and explain the result in a real engineering context.</p>
+  </section>
+</div>
+</section>
 </main>
 <footer class="site-footer"><div class="container footer-grid">
-<div><h3>Mr Mwirigi Mathematics Training Hub</h3><p>Professional engineering mathematics support for Civil Engineering, Building Technology and Land Survey trainees.</p></div>
-<div><h4>Quick Access</h4><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision Materials</a><a href="../references.html">References</a><a href="../contact.html">Contact Trainer</a></div>
-<div><h4>Learning Areas</h4><a href="../civil.html">Civil Engineering Mathematics</a><a href="../building.html">Building Technology Mathematics</a><a href="../land-survey.html">Land Survey Mathematics</a></div>
+<div><h3>Mr Mwirigi Mathematics Training Hub</h3><p>Professional engineering mathematics notes for Civil Engineering, Building Technology and Land Survey trainees.</p></div>
+<div><h4>Quick Access</h4><a href="../assignments.html">Assignments</a><a href="../revision.html">Revision</a><a href="../references.html">References</a><a href="../contact.html">Contact</a></div>
+<div><h4>Learning Areas</h4><a href="../civil.html">Civil Engineering</a><a href="../building.html">Building Technology</a><a href="../land-survey.html">Land Survey</a></div>
 </div><div class="copyright"><p>© 2026 Mr Mwirigi Mathematics Training Hub. All rights reserved.</p></div></footer>
 <script src="../js/main.js"></script></body></html>

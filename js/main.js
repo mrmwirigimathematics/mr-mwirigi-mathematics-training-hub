@@ -6,3 +6,4 @@ if (menuToggle && siteNav) {
     menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
   });
 }
+function printPage(){ window.print(); }

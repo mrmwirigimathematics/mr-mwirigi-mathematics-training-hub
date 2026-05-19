@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Engineering Mathematics II for Building Technology | Mr Mwirigi Mathematics Training Hub</title>
+<title>Trigonometry and Complex Numbers | Mr Mwirigi Mathematics Training Hub</title>
 <link rel="stylesheet" href="../css/style.css"/>
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
@@ -13,15 +13,15 @@
 </nav></div></header>
 <main>
 <section class="page-hero"><div class="container">
-<p class="eyebrow">Building Technology</p>
-<h1>Engineering Mathematics II for Building Technology</h1>
-<p>Calculus, vectors, matrices and construction data analysis for advanced building calculations.</p>
+<p class="eyebrow">Civil Engineering</p>
+<h1>Trigonometry and Complex Numbers</h1>
+<p>Trigonometric ratios, sine rule, cosine rule, bearings, waveforms and complex numbers for civil engineering mathematics.</p>
 </div></section>
 
 <section class="container section lesson-layout">
 <aside class="toc-card">
   <h3>Lesson menu</h3>
-  <a href="#s1">1. Advanced algebra and functions</a><a href="#s2">2. Differentiation and optimization</a><a href="#s3">3. Integration for accumulated quantities</a><a href="#s4">4. Vectors and components</a><a href="#s5">5. Matrices and data</a>
+  <a href="#s1">1. Right-triangle trigonometry</a><a href="#s2">2. Sine rule and cosine rule</a><a href="#s3">3. Bearings and direction</a><a href="#s4">4. Trigonometric identities</a><a href="#s5">5. Complex numbers</a>
   <hr>
   <button class="btn secondary" onclick="printPage()">Print / Save as PDF</button>
 </aside>
@@ -29,92 +29,94 @@
   <section class="lesson-card">
     <span class="note-tag">Professional learner notes</span>
     <h2>Purpose of the topic</h2>
-    <p>Engineering Mathematics II supports advanced construction calculations, cost optimization, load components, matrix equations and data interpretation.</p>
+    <p>Trigonometry supports heights, slopes, setting out, boundaries and survey geometry. Complex numbers prepare trainees for higher engineering mathematics.</p>
     <p>These notes are written as class notes for engineering trainees. They follow the same working standard used in class: state the formula, substitute correctly, compute, attach units, and then explain what the answer means in a civil, building or survey situation.</p>
   </section>
   
 <section class="lesson-card" id="s1">
   <span class="note-tag">Section 1</span>
-  <h2>Advanced algebra and functions</h2>
-  <p>Functions model cost, quantity, load or production.</p>
+  <h2>Right-triangle trigonometry</h2>
+  <p>Right-triangle trigonometry is used where one angle is 90 degrees. It links unknown lengths and angles.</p>
   <h3>Key formulae</h3>
-  <div class="formula-box">\[y=f(x)\]</div>
-<div class="formula-box">\[y=mx+c\]</div>
+  <div class="formula-box">\[\sin\theta=\frac{O}{H}\]</div>
+<div class="formula-box">\[\cos\theta=\frac{A}{H}\]</div>
+<div class="formula-box">\[\tan\theta=\frac{O}{A}\]</div>
   <div class="example-box">
     <h3>Worked example</h3>
-    <p>If C=500x+2000, fixed cost is 2000 and rate is 500 per unit.</p>
+    <p>A wall is observed from 12 m away at angle 32°. Height = 12 tan32° = 7.50 m.</p>
     <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
   </div>
   <h3>Engineering interpretation</h3>
-  <p>Used in estimating.</p>
+  <p>This estimates heights where direct measurement is difficult.</p>
 </section>
 
 <section class="lesson-card" id="s2">
   <span class="note-tag">Section 2</span>
-  <h2>Differentiation and optimization</h2>
-  <p>Differentiation finds rates and stationary points.</p>
+  <h2>Sine rule and cosine rule</h2>
+  <p>Non-right triangles occur in setting out and boundary work. The sine and cosine rules solve missing sides and angles.</p>
   <h3>Key formulae</h3>
-  <div class="formula-box">\[\frac{dy}{dx}=f'(x)\]</div>
-<div class="formula-box">\[\frac{dy}{dx}=0\]</div>
+  <div class="formula-box">\[\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}\]</div>
+<div class="formula-box">\[c^2=a^2+b^2-2ab\cos C\]</div>
   <div class="example-box">
     <h3>Worked example</h3>
-    <p>For C=x²-10x+60, dC/dx=2x-10. Minimum occurs at x=5.</p>
+    <p>Sides 45 m and 60 m include 70°. c²=45²+60²-2(45)(60)cos70°, so c≈61.47 m.</p>
     <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
   </div>
   <h3>Engineering interpretation</h3>
-  <p>Used in cost optimisation models.</p>
+  <p>Used in road reserve triangles and boundary checks.</p>
 </section>
 
 <section class="lesson-card" id="s3">
   <span class="note-tag">Section 3</span>
-  <h2>Integration for accumulated quantities</h2>
-  <p>Integration finds total change, area and accumulation.</p>
+  <h2>Bearings and direction</h2>
+  <p>Bearings give direction clockwise from north. They are essential in survey lines and setting out.</p>
   <h3>Key formulae</h3>
-  <div class="formula-box">\[A=\int_a^b f(x)\,dx\]</div>
+  <div class="formula-box">\[\theta=\tan^{-1}\left(\frac{\Delta E}{\Delta N}\right)\]</div>
   <div class="example-box">
     <h3>Worked example</h3>
-    <p>If production rate is r(t)=2t+3, total output from 0 to 4 is ∫(2t+3)dt=28.</p>
+    <p>If ΔE=45 m and ΔN=70 m, θ=tan⁻¹(45/70)=32.74° from north.</p>
     <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
   </div>
   <h3>Engineering interpretation</h3>
-  <p>Useful for production planning models.</p>
+  <p>This gives the whole-circle bearing for a line in the north-east quadrant.</p>
 </section>
 
 <section class="lesson-card" id="s4">
   <span class="note-tag">Section 4</span>
-  <h2>Vectors and components</h2>
-  <p>Loads can be resolved into components.</p>
+  <h2>Trigonometric identities</h2>
+  <p>Identities simplify expressions and solve trigonometric equations.</p>
   <h3>Key formulae</h3>
-  <div class="formula-box">\[A_x=A\cos\theta\]</div>
-<div class="formula-box">\[A_y=A\sin\theta\]</div>
+  <div class="formula-box">\[\sin^2\theta+\cos^2\theta=1\]</div>
+<div class="formula-box">\[\tan\theta=\frac{\sin\theta}{\cos\theta}\]</div>
   <div class="example-box">
     <h3>Worked example</h3>
-    <p>A 10 kN load at 30° has horizontal component 8.66 kN and vertical component 5 kN.</p>
+    <p>If sinθ=0.6 in a right triangle, cosθ=sqrt(1-0.6²)=0.8.</p>
     <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
   </div>
   <h3>Engineering interpretation</h3>
-  <p>Used in simple structural load analysis.</p>
+  <p>Identities support checking trigonometric calculations.</p>
 </section>
 
 <section class="lesson-card" id="s5">
   <span class="note-tag">Section 5</span>
-  <h2>Matrices and data</h2>
-  <p>Matrices solve systems; statistics summarise test results.</p>
+  <h2>Complex numbers</h2>
+  <p>Complex numbers extend real numbers using the imaginary unit. They are written in rectangular or polar form.</p>
   <h3>Key formulae</h3>
-  <div class="formula-box">\[AX=B\]</div>
-<div class="formula-box">\[s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}\]</div>
+  <div class="formula-box">\[z=a+bi\]</div>
+<div class="formula-box">\[r=\sqrt{a^2+b^2}\]</div>
+<div class="formula-box">\[\theta=\tan^{-1}\left(\frac{b}{a}\right)\]</div>
   <div class="example-box">
     <h3>Worked example</h3>
-    <p>Two material equations can be written in matrix form for calculator solution.</p>
+    <p>For z=3+4i, r=5 and θ=53.13°.</p>
     <p><strong>Method discipline:</strong> write the formula first, substitute known values, simplify carefully, attach correct units, and interpret the answer.</p>
   </div>
   <h3>Engineering interpretation</h3>
-  <p>Supports planning and quality-control decisions.</p>
+  <p>Complex numbers support later work in vectors, waveforms and advanced engineering mathematics.</p>
 </section>
 
   <section class="exercise-box">
     <h2>Practice exercises</h2>
-    <ol class="steps"><li>Find stationary point of y=x²-8x+20.</li><li>Integrate 4x+1 from 0 to 5.</li><li>Resolve 15 kN at 40° into components.</li><li>Write 2x+y=9 and x+3y=10 in matrix form.</li><li>Find mean of 25,28,26,27,24.</li></ol>
+    <ol class="steps"><li>Find the height of a pole if the distance is 20 m and angle of elevation is 28°.</li><li>Use cosine rule for sides 30 m and 42 m with included angle 65°.</li><li>Find the bearing when ΔE=60 m and ΔN=80 m.</li><li>Convert 5+12i into polar form.</li><li>Solve sinθ=0.5 for 0°≤θ≤360°.</li></ol>
   </section>
   <section class="summary-box">
     <h2>Summary</h2>

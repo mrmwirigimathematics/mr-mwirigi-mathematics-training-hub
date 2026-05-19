@@ -1,16 +1,9 @@
 # Mr Mwirigi Mathematics Training Hub
 
-Professional GitHub Pages-ready engineering mathematics website.
+Rebuilt website-first version.
 
-## Included
-- Civil Engineering Mathematics
-- Building Technology Mathematics
-- Land Survey Mathematics
-- Topic pages with MathJax equations
-- Learner notes PDFs
-- Assignment PDFs
-- Revision PDFs
-- Trainer guides in /trainer/
-
-## Privacy
-Do not upload the trainer folder if you want answer guides to remain private.
+- Full notes are readable directly on topic pages.
+- Equations use MathJax.
+- Each topic page has Print / Save as PDF.
+- No trainer answer guides are published.
+- Content is original and aligned to uploaded CU/OS and engineering mathematics references.
