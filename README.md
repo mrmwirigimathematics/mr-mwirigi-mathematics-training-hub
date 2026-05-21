@@ -1,4 +1,4 @@
-# Mr Mwirigi Mathematics Training Hub
+# Mathematics Training Hub
 
 Rebuilt website-first version.
 
